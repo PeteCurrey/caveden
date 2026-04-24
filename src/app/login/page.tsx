@@ -56,7 +56,7 @@ export default function LoginPage() {
           </div>
 
           <div className="mt-8 text-center">
-            <Link href="/forgot-password" size="sm" className="text-[10px] font-dm-mono text-steel uppercase tracking-widest hover:text-white transition-colors">
+            <Link href="/forgot-password" className="text-[10px] font-dm-mono text-steel uppercase tracking-widest hover:text-white transition-colors">
               FORGOT PASSWORD?
             </Link>
           </div>

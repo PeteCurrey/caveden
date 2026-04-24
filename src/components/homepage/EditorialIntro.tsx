@@ -23,13 +23,13 @@ export function EditorialIntro() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="bg-obsidian py-96 relative overflow-hidden">
-      <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-32">
+    <section ref={containerRef} className="bg-obsidian py-32 relative overflow-hidden">
+      <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
         <div className="lg:w-3/5 relative z-10">
           <h2 className="gsap-reveal text-[clamp(38px,5vw,68px)] font-bold text-white mb-20 font-syne leading-tight">
             This Isn't a Shed Shop.
           </h2>
-          <p className="gsap-reveal text-xl md:text-2xl text-concrete font-dm-sans leading-relaxed max-w-2xl mb-32">
+          <p className="gsap-reveal text-xl md:text-2xl text-concrete font-dm-sans leading-relaxed max-w-2xl mb-12">
             Forget the flat-pack tongue-and-groove from the garden 
             centre. We're here for the builds that run underfloor 
             heating off a smart thermostat, insulate to passivhaus 

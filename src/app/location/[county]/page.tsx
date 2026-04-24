@@ -32,7 +32,7 @@ export default async function LocationCountyPage({ params }: { params: { county:
         </div>
       </section>
 
-      <section className="py-80 border-t border-slate-900">
+      <section className="py-24 border-t border-slate-900">
         <div className="container mx-auto px-6">
           <div className="prose prose-invert prose-concrete max-w-4xl">
             <h2 className="text-2xl font-bold font-syne uppercase">Planning in {countyName}</h2>

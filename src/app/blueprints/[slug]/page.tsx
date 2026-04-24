@@ -16,7 +16,7 @@ export default async function BlueprintDetailPage({ params }: { params: { slug: 
 
       <section className="pt-40 pb-20 bg-obsidian">
         <div className="container mx-auto px-6">
-          <Link href="/blueprints" className="flex items-center gap-2 text-technical text-steel hover:text-brass transition-colors mb-32">
+          <Link href="/blueprints" className="flex items-center gap-2 text-technical text-steel hover:text-brass transition-colors mb-12">
             <ChevronLeft className="w-4 h-4" /> BACK TO LIBRARY
           </Link>
 
@@ -41,7 +41,7 @@ export default async function BlueprintDetailPage({ params }: { params: { slug: 
                 </p>
               </div>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-48">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
                 <div>
                   <div className="text-technical text-steel mb-1">BUILDING SIZE</div>
                   <div className="text-lg font-bold text-white font-syne">4000 X 3000MM</div>
@@ -94,9 +94,9 @@ export default async function BlueprintDetailPage({ params }: { params: { slug: 
       </section>
 
       {/* Related Blueprints */}
-      <section className="py-96 border-t border-slate-900 bg-obsidian">
+      <section className="py-32 border-t border-slate-900 bg-obsidian">
         <div className="container mx-auto px-6">
-          <h2 className="text-2xl font-bold text-white font-syne uppercase mb-32">Also available in:</h2>
+          <h2 className="text-2xl font-bold text-white font-syne uppercase mb-12">Also available in:</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl">
              {/* Mock related cards */}
              <div className="bg-slate-900 border border-slate-800 p-6 flex gap-10 group cursor-pointer hover:border-brass transition-all">

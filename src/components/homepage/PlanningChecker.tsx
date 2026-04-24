@@ -66,7 +66,7 @@ export function PlanningChecker() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="bg-obsidian py-96 border-t border-slate-900 overflow-hidden">
+    <section ref={containerRef} className="bg-obsidian py-32 border-t border-slate-900 overflow-hidden">
       <div className="container mx-auto px-6 flex flex-col lg:flex-row gap-32">
         <div className="lg:w-1/2 planning-content">
           <span className="text-technical text-brass mb-4 block">PLANNING INTELLIGENCE</span>

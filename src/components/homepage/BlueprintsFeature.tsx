@@ -36,7 +36,7 @@ export function BlueprintsFeature() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="bg-obsidian py-96 border-t border-slate-900 overflow-hidden">
+    <section ref={containerRef} className="bg-obsidian py-32 border-t border-slate-900 overflow-hidden">
       <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-32">
         <div className="lg:w-[55%] blueprint-content">
           <span className="text-technical text-brass mb-4 block">BLUEPRINTS & DOCUMENTS</span>
@@ -50,7 +50,7 @@ export function BlueprintsFeature() {
             build sequences. Download, print, build with confidence.
           </p>
 
-          <ul className="flex flex-col gap-4 mb-32">
+          <ul className="flex flex-col gap-4 mb-12">
             {[
               "Fully dimensioned floor plans & elevations",
               "Materials schedule with supplier notes",

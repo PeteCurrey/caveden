@@ -29,7 +29,7 @@ export default function CostEstimatorPage() {
 
       <section className="pt-40 pb-20 bg-obsidian border-b border-slate-900">
         <div className="container mx-auto px-6">
-          <Link href="/tools" className="flex items-center gap-2 text-technical text-steel hover:text-brass transition-colors mb-32">
+          <Link href="/tools" className="flex items-center gap-2 text-technical text-steel hover:text-brass transition-colors mb-12">
             <ChevronLeft className="w-4 h-4" /> BACK TO TOOLS HUB
           </Link>
 
@@ -46,7 +46,7 @@ export default function CostEstimatorPage() {
         </div>
       </section>
 
-      <section className="py-80">
+      <section className="py-24">
         <div className="container mx-auto px-6 flex flex-col lg:flex-row gap-32">
           {/* Inputs */}
           <div className="lg:w-1/2 space-y-12">
@@ -121,7 +121,7 @@ export default function CostEstimatorPage() {
                 </div>
               </div>
 
-              <div className="space-y-6 mb-32">
+              <div className="space-y-6 mb-12">
                 {breakdown.map((item) => (
                   <div key={item.label} className="flex justify-between items-end">
                     <span className="text-concrete font-dm-sans text-sm">{item.label}</span>

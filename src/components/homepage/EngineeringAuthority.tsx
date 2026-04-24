@@ -24,9 +24,9 @@ export function EngineeringAuthority() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="bg-slate-950 py-96 overflow-hidden border-y border-slate-900">
+    <section ref={containerRef} className="bg-slate-950 py-32 overflow-hidden border-y border-slate-900">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row gap-32 items-center">
+        <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
           <div className="lg:w-1/2">
             <span className="text-technical text-brass mb-6 block">ENGINEERING AUTHORITY</span>
             <h2 className="text-[clamp(32px,4.5vw,56px)] font-bold text-white font-syne uppercase leading-none mb-20">

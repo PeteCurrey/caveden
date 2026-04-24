@@ -7,7 +7,7 @@ export default function SystemsHubPage() {
     <main className="min-h-screen bg-obsidian">
       <Navbar />
 
-      <section className="pt-64 pb-20 bg-obsidian">
+      <section className="pt-32 pb-20 bg-obsidian">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <span className="text-technical text-brass mb-4 block">TECHNICAL KNOWLEDGE BASE</span>
@@ -26,7 +26,7 @@ export default function SystemsHubPage() {
       <BuildSystemsGrid />
 
       {/* Engineering Philosophy Section */}
-      <section className="bg-slate-900 py-96 border-y border-slate-800">
+      <section className="bg-slate-900 py-32 border-y border-slate-800">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl">
              <h2 className="text-3xl font-bold text-white font-syne uppercase mb-20 leading-tight">

@@ -48,7 +48,7 @@ export default function BuildPlannerPage() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             {/* Progress Bar */}
-            <div className="mb-48">
+            <div className="mb-16">
                <div className="flex justify-between mb-4">
                  {[1, 2, 3, 4, 5].map(i => (
                    <div key={i} className={`text-[10px] font-dm-mono tracking-widest ${step >= i ? "text-brass" : "text-steel"}`}>
@@ -70,7 +70,7 @@ export default function BuildPlannerPage() {
                 <h1 className="text-4xl font-bold text-white font-syne uppercase mb-4 flex items-center gap-4">
                   <LayoutGrid className="text-brass" /> Select Your Build Type.
                 </h1>
-                <p className="text-concrete text-lg mb-32">What is the primary purpose of your new space?</p>
+                <p className="text-concrete text-lg mb-12">What is the primary purpose of your new space?</p>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   {BUILD_TYPES.map(type => (
                     <button
@@ -91,7 +91,7 @@ export default function BuildPlannerPage() {
                 <h1 className="text-4xl font-bold text-white font-syne uppercase mb-4 flex items-center gap-4">
                   <Ruler className="text-brass" /> Define Dimensions.
                 </h1>
-                <p className="text-concrete text-lg mb-32">Set the footprint of your build. Live area: {width * depth}m²</p>
+                <p className="text-concrete text-lg mb-12">Set the footprint of your build. Live area: {width * depth}m²</p>
                 <div className="space-y-12 bg-slate-900 p-12 border border-slate-800">
                   <div>
                     <label className="text-technical text-brass mb-8 block">WIDTH: {width}M</label>
@@ -111,7 +111,7 @@ export default function BuildPlannerPage() {
                 <h1 className="text-4xl font-bold text-white font-syne uppercase mb-4 flex items-center gap-4">
                   <Settings className="text-brass" /> Configure Systems.
                 </h1>
-                <p className="text-concrete text-lg mb-32">Select the technical requirements for your build.</p>
+                <p className="text-concrete text-lg mb-12">Select the technical requirements for your build.</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {SYSTEMS.map(sys => (
                     <button
@@ -133,7 +133,7 @@ export default function BuildPlannerPage() {
                 <h1 className="text-4xl font-bold text-white font-syne uppercase mb-4 flex items-center gap-4">
                   <TrendingUp className="text-brass" /> Specification Level.
                 </h1>
-                <p className="text-concrete text-lg mb-32">Choose the quality level for finishes and materials.</p>
+                <p className="text-concrete text-lg mb-12">Choose the quality level for finishes and materials.</p>
                 <div className="grid grid-cols-1 gap-10">
                   {[
                     { id: "budget", label: "BUDGET (£)", desc: "Functional materials, standard finishes, focused on value." },
@@ -165,7 +165,7 @@ export default function BuildPlannerPage() {
                   <p className="text-concrete text-lg">We've generated a configuration based on your requirements.</p>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-32">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
                    <div className="bg-slate-900 border border-slate-800 p-12">
                       <h4 className="text-technical text-brass mb-20">CONFIG SUMMARY</h4>
                       <div className="space-y-4">

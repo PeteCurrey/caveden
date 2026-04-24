@@ -17,7 +17,7 @@ export default async function SystemDetailPage({ params }: { params: { slug: str
 
       <section className="pt-40 pb-20 bg-obsidian border-b border-slate-900">
         <div className="container mx-auto px-6">
-          <Link href="/systems" className="flex items-center gap-2 text-technical text-steel hover:text-brass transition-colors mb-32">
+          <Link href="/systems" className="flex items-center gap-2 text-technical text-steel hover:text-brass transition-colors mb-12">
             <ChevronLeft className="w-4 h-4" /> BACK TO SYSTEMS HUB
           </Link>
 
@@ -51,7 +51,7 @@ export default async function SystemDetailPage({ params }: { params: { slug: str
       </section>
 
       {/* At a Glance Spec Grid */}
-      <section className="py-80 bg-slate-950">
+      <section className="py-24 bg-slate-950">
         <div className="container mx-auto px-6">
           <h3 className="text-technical text-steel mb-10">AT A GLANCE</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10">
@@ -73,7 +73,7 @@ export default async function SystemDetailPage({ params }: { params: { slug: str
       </section>
 
       {/* Deep Dive Content */}
-      <section className="py-96">
+      <section className="py-32">
         <div className="container mx-auto px-6 flex flex-col lg:flex-row gap-32">
           <div className="lg:w-2/3 prose prose-invert prose-concrete max-w-none">
             <h2 className="text-3xl font-bold font-syne uppercase mb-20">Engineering Principles</h2>

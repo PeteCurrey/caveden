@@ -64,7 +64,7 @@ export default function SupplierDirectoryPage() {
       </section>
 
       {/* Directory Grid */}
-      <section className="py-80">
+      <section className="py-24">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {SUPPLIERS.map((s) => (

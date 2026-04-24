@@ -73,7 +73,7 @@ export default function BlueprintsLibraryPage() {
         </div>
       </section>
 
-      <section className="py-80">
+      <section className="py-24">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {filteredBlueprints.length > 0 ? (
@@ -91,7 +91,7 @@ export default function BlueprintsLibraryPage() {
       </section>
 
       {/* Blueprint Quality CTA */}
-      <section className="bg-slate-900 py-96 border-y border-slate-800">
+      <section className="bg-slate-900 py-32 border-y border-slate-800">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-32 items-center">
             <div>

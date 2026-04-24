@@ -32,7 +32,7 @@ export default async function GardenOfficeSizePage({ params }: { params: { size:
         </div>
       </section>
 
-      <section className="py-80 border-t border-slate-900">
+      <section className="py-24 border-t border-slate-900">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 prose prose-invert prose-concrete max-w-none">

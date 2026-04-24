@@ -11,7 +11,6 @@ import {
   ChevronRight, 
   Bell, 
   Search,
-  Tool,
   Library
 } from "lucide-react";
 import { clsx, type ClassValue } from "clsx";

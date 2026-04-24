@@ -51,7 +51,7 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-20 container mx-auto px-6 h-full flex flex-col justify-center pt-48 lg:pt-64 pb-20 md:pb-32">
+      <div className="relative z-20 container mx-auto px-6 h-full flex flex-col justify-center pt-[200px] lg:pt-[300px] pb-20 md:pb-32">
         <div ref={contentRef} className="max-w-3xl">
           <span className="text-technical text-brass mb-8 md:mb-12 block tracking-widest">
             THE GARDEN BUILD AUTHORITY

@@ -31,7 +31,7 @@ export function CommunityShowcase() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="bg-obsidian py-48 border-t border-slate-900">
+    <section ref={containerRef} className="bg-obsidian py-96 border-t border-slate-900">
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-end mb-16">
           <div>

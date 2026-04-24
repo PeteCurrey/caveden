@@ -72,7 +72,7 @@ export function Navbar() {
         </Link>
 
         {/* Primary Nav */}
-        <ul className="hidden xl:flex items-center gap-8">
+        <ul className="hidden 2xl:flex items-center gap-8">
           {NAV_ITEMS.map((item) => (
             <li
               key={item.label}
@@ -106,7 +106,7 @@ export function Navbar() {
             PLAN BUILD
           </Link>
           
-          <button className="xl:hidden text-white">
+          <button className="2xl:hidden text-white">
             <Menu className="w-6 h-6" />
           </button>
         </div>

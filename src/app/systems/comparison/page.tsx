@@ -106,7 +106,7 @@ export default function ComparisonPage() {
       </section>
 
       {/* Recommendation Section */}
-      <section className="py-48">
+      <section className="py-96">
         <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
           <div className="bg-slate-900 p-12 border border-slate-800">
             <ThermometerSnowflake className="w-10 h-10 text-brass mb-8" />

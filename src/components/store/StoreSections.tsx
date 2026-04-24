@@ -24,7 +24,7 @@ const PICKS = [
 
 export function EditorsPicks() {
   return (
-    <section className="bg-obsidian py-48">
+    <section className="bg-obsidian py-96">
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-end mb-16">
           <div>
@@ -72,7 +72,7 @@ const CATEGORIES = [
 
 export function CategoryGrid() {
   return (
-    <section className="bg-obsidian py-48 border-t border-slate-900">
+    <section className="bg-obsidian py-96 border-t border-slate-900">
       <div className="container mx-auto px-6">
         <h2 className="text-technical text-steel mb-12 text-center">SHOP BY CATEGORY</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">

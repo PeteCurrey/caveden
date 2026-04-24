@@ -9,16 +9,16 @@ import gsap from "gsap";
 const BUILD_TYPES = [
   { name: "Garden Office", desc: "The professional workspace", tag: "FROM 12m²", img: "/images/build-office.png" },
   { name: "Man Cave", desc: "Your rules. Your space.", tag: "CUSTOM SIZE", img: "/images/build-mancave.png" },
-  { name: "Bar Room", desc: "Entertain properly", tag: "FROM 15m²", img: "https://images.unsplash.com/photo-1574096079513-d8259312b785?q=80&w=2070&auto=format&fit=crop" },
+  { name: "Bar Room", desc: "Entertain properly", tag: "FROM 15m²", img: "/images/hero-main.png" },
   { name: "Home Gym", desc: "Train without the commute", tag: "FROM 10m²", img: "/images/build-gym.png" },
   { name: "Music Studio", desc: "Soundproofed and serious", tag: "ACOUSTIC SPEC", img: "/images/build-studio.png" },
-  { name: "Cinema Room", desc: "Immersive, year-round", tag: "DARK ROOM", img: "https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=2070&auto=format&fit=crop" },
-  { name: "Workshop", desc: "Built for making things", tag: "HEAVY DUTY", img: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop" },
-  { name: "Games Room", desc: "Go big or go inside", tag: "LARGE SPAN", img: "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2070&auto=format&fit=crop" },
-  { name: "She Shed", desc: "Creative sanctuary", tag: "FROM 8m²", img: "https://images.unsplash.com/photo-1513519245088-0e12902e35ca?q=80&w=2070&auto=format&fit=crop" },
-  { name: "Garden Annexe", desc: "Habitable space done right", tag: "BUILD REGS", img: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?q=80&w=2070&auto=format&fit=crop" },
-  { name: "Pub Shed", desc: "The neighbourhood favourite", tag: "SOCIAL HUB", img: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=2070&auto=format&fit=crop" },
-  { name: "Art Studio", desc: "Light, space, focus", tag: "NORTH LIGHT", img: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=2070&auto=format&fit=crop" },
+  { name: "Cinema Room", desc: "Immersive, year-round", tag: "DARK ROOM", img: "/images/hero-main.png" },
+  { name: "Workshop", desc: "Built for making things", tag: "HEAVY DUTY", img: "/images/hero-main.png" },
+  { name: "Games Room", desc: "Go big or go inside", tag: "LARGE SPAN", img: "/images/hero-main.png" },
+  { name: "She Shed", desc: "Creative sanctuary", tag: "FROM 8m²", img: "/images/build-studio.png" },
+  { name: "Garden Annexe", desc: "Habitable space done right", tag: "BUILD REGS", img: "/images/build-office.png" },
+  { name: "Pub Shed", desc: "The neighbourhood favourite", tag: "SOCIAL HUB", img: "/images/build-mancave.png" },
+  { name: "Art Studio", desc: "Light, space, focus", tag: "NORTH LIGHT", img: "/images/build-studio.png" },
 ];
 
 export function BuildTypeNavigator() {
@@ -39,7 +39,7 @@ export function BuildTypeNavigator() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="bg-obsidian py-48 border-t border-slate-900">
+    <section ref={containerRef} className="bg-obsidian py-96 border-t border-slate-900">
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-end mb-16">
           <div>

@@ -94,7 +94,7 @@ export default async function BlueprintDetailPage({ params }: { params: { slug: 
       </section>
 
       {/* Related Blueprints */}
-      <section className="py-32 border-t border-slate-900 bg-obsidian">
+      <section className="py-48 border-t border-slate-900 bg-obsidian">
         <div className="container mx-auto px-6">
           <h2 className="text-2xl font-bold text-white font-syne uppercase mb-12">Also available in:</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl">

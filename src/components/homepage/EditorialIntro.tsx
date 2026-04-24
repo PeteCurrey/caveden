@@ -23,7 +23,7 @@ export function EditorialIntro() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="bg-obsidian py-32 relative overflow-hidden">
+    <section ref={containerRef} className="bg-obsidian py-48 relative overflow-hidden">
       <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
         <div className="lg:w-3/5 relative z-10">
           <h2 className="gsap-reveal text-[clamp(38px,5vw,68px)] font-bold text-white mb-20 font-syne leading-tight">

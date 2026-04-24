@@ -81,7 +81,7 @@ export default function ToolsHubPage() {
       </section>
 
       {/* Engineering Standards CTA */}
-      <section className="bg-obsidian py-32 border-b border-slate-900">
+      <section className="bg-obsidian py-48 border-b border-slate-900">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold text-white font-syne uppercase mb-12">Built to a higher standard.</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">

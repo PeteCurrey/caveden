@@ -72,7 +72,7 @@ export function Navbar() {
         </Link>
 
         {/* Primary Nav */}
-        <ul className="hidden lg:flex items-center gap-12">
+        <ul className="hidden xl:flex items-center gap-8">
           {NAV_ITEMS.map((item) => (
             <li
               key={item.label}
@@ -99,18 +99,14 @@ export function Navbar() {
             </Link>
           </div>
           
-          <Link href="/journey" className="hidden lg:block text-technical text-white/70 hover:text-white">
-            TRACK MY BUILD
-          </Link>
-          
           <Link
             href="/planner"
             className="bg-brass text-obsidian px-5 py-2 text-technical font-bold hover:bg-amber transition-colors"
           >
-            START PLANNING
+            PLAN BUILD
           </Link>
           
-          <button className="lg:hidden text-white">
+          <button className="xl:hidden text-white">
             <Menu className="w-6 h-6" />
           </button>
         </div>

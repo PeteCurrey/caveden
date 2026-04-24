@@ -61,8 +61,8 @@ export function Navbar() {
       className={cn(
         "fixed top-0 left-0 w-full z-50 transition-all duration-500 border-b",
         isScrolled
-          ? "backdrop-blur-md bg-obsidian/85 border-slate-700 py-6"
-          : "bg-transparent border-transparent py-10"
+          ? "backdrop-blur-xl bg-obsidian/95 border-slate-700 py-8"
+          : "bg-obsidian/20 border-transparent py-14"
       )}
     >
       <nav className="container mx-auto px-6 flex items-center justify-between">

@@ -7,7 +7,7 @@ export default function SystemsHubPage() {
     <main className="min-h-screen bg-obsidian">
       <Navbar />
 
-      <section className="pt-40 pb-20 bg-obsidian">
+      <section className="pt-64 pb-20 bg-obsidian">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <span className="text-technical text-brass mb-4 block">TECHNICAL KNOWLEDGE BASE</span>

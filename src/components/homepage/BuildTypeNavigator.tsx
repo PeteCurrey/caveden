@@ -8,7 +8,7 @@ import gsap from "gsap";
 
 const BUILD_TYPES = [
   { name: "Garden Office", desc: "The professional workspace", tag: "FROM 12m²", img: "/images/build-office.png" },
-  { name: "Man Cave", desc: "Your rules. Your space.", tag: "CUSTOM SIZE", img: "https://images.unsplash.com/photo-1595428774751-2856f4d1e27a?q=80&w=2070&auto=format&fit=crop" },
+  { name: "Man Cave", desc: "Your rules. Your space.", tag: "CUSTOM SIZE", img: "/images/build-mancave.png" },
   { name: "Bar Room", desc: "Entertain properly", tag: "FROM 15m²", img: "https://images.unsplash.com/photo-1574096079513-d8259312b785?q=80&w=2070&auto=format&fit=crop" },
   { name: "Home Gym", desc: "Train without the commute", tag: "FROM 10m²", img: "/images/build-gym.png" },
   { name: "Music Studio", desc: "Soundproofed and serious", tag: "ACOUSTIC SPEC", img: "/images/build-studio.png" },

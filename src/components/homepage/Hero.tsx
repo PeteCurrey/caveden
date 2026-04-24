@@ -51,7 +51,7 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-20 container mx-auto px-6 min-h-screen flex flex-col justify-center pt-48 pb-32">
+      <div className="relative z-20 container mx-auto px-6 min-h-screen flex flex-col justify-center pt-64 pb-32">
         <div ref={contentRef} className="max-w-3xl">
           <span className="text-technical text-brass mb-20 block tracking-widest">
             THE GARDEN BUILD AUTHORITY
@@ -67,7 +67,7 @@ export function Hero() {
             engineered to a standard you'll be proud of for decades.
           </p>
           
-          <div className="flex flex-wrap gap-8 mb-32">
+          <div className="flex flex-wrap gap-12 mb-48">
             <Link
               href="/planner"
               className="bg-brass text-obsidian px-10 py-5 text-technical font-bold hover:bg-amber transition-all transform hover:-translate-y-1"

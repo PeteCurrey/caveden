@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/homepage/Hero";
 import { EditorialIntro } from "@/components/homepage/EditorialIntro";
+import { EngineeringAuthority } from "@/components/homepage/EngineeringAuthority";
 import { BuildTypeNavigator } from "@/components/homepage/BuildTypeNavigator";
 import { BuildSystemsGrid } from "@/components/homepage/BuildSystemsGrid";
 import { BlueprintsFeature } from "@/components/homepage/BlueprintsFeature";
@@ -19,7 +20,7 @@ export default function Home() {
       <Hero />
       
       <EditorialIntro />
-      
+      <EngineeringAuthority />
       <BuildTypeNavigator />
       
       <BuildSystemsGrid />

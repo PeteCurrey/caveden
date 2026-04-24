@@ -42,8 +42,8 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-tr from-obsidian via-obsidian/60 to-transparent z-10" />
         <div className="absolute inset-0 bg-obsidian/40 z-10" />
         <Image
-          src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop"
-          alt="Contemporary garden office at dusk"
+          src="/images/hero-main.png"
+          alt="Bespoke CaveDen architectural garden office"
           fill
           className="object-cover"
           priority

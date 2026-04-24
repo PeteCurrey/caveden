@@ -21,7 +21,7 @@ export default async function GardenOfficeSizePage({ params }: { params: { size:
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <span className="text-technical text-brass mb-4 block">BUILD TYPE // GARDEN OFFICE</span>
-            <h1 className="text-[clamp(32px,5vw,68px)] font-bold text-white font-syne uppercase mb-12 leading-tight">
+            <h1 className="text-[clamp(32px,5vw,68px)] font-bold text-white font-syne uppercase mb-20 leading-tight">
               {size} Garden Office Guide.
             </h1>
             <p className="text-xl text-concrete font-dm-sans leading-relaxed">
@@ -32,7 +32,7 @@ export default async function GardenOfficeSizePage({ params }: { params: { size:
         </div>
       </section>
 
-      <section className="py-48 border-t border-slate-900">
+      <section className="py-80 border-t border-slate-900">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 prose prose-invert prose-concrete max-w-none">

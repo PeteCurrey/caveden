@@ -11,7 +11,7 @@ export default function BuildTypesHubPage() {
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <span className="text-technical text-brass mb-4 block">BUILD TYPE EXPLORER</span>
-            <h1 className="text-[clamp(38px,5vw,68px)] font-bold text-white font-syne uppercase mb-12 leading-tight">
+            <h1 className="text-[clamp(38px,5vw,68px)] font-bold text-white font-syne uppercase mb-20 leading-tight">
               Choose Your Build.
             </h1>
             <p className="text-xl text-concrete font-dm-sans leading-relaxed">
@@ -26,9 +26,9 @@ export default function BuildTypesHubPage() {
       <BuildTypeNavigator />
 
       {/* Comparison Section */}
-      <section className="bg-slate-900 py-64 border-y border-slate-800">
+      <section className="bg-slate-900 py-96 border-y border-slate-800">
         <div className="container mx-auto px-6">
-           <h2 className="text-3xl font-bold text-white font-syne uppercase mb-20 text-center">Compare Build Characteristics.</h2>
+           <h2 className="text-3xl font-bold text-white font-syne uppercase mb-32 text-center">Compare Build Characteristics.</h2>
            <div className="overflow-x-auto">
               <table className="w-full text-left border-collapse">
                 <thead>

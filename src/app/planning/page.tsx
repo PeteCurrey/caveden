@@ -22,7 +22,7 @@ export default function PlanningHubPage() {
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <span className="text-technical text-brass mb-4 block">REGULATORY INTELLIGENCE</span>
-            <h1 className="text-[clamp(38px,5vw,68px)] font-bold text-white font-syne uppercase mb-12 leading-tight">
+            <h1 className="text-[clamp(38px,5vw,68px)] font-bold text-white font-syne uppercase mb-20 leading-tight">
               Know Your Rights.<br />Build With Confidence.
             </h1>
             <p className="text-xl text-concrete font-dm-sans leading-relaxed">
@@ -34,7 +34,7 @@ export default function PlanningHubPage() {
         </div>
       </section>
 
-      <section className="py-48 bg-slate-950 border-y border-slate-900">
+      <section className="py-80 bg-slate-950 border-y border-slate-900">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {SCENARIOS.map((scenario) => (
@@ -46,7 +46,7 @@ export default function PlanningHubPage() {
                 <h3 className="text-xl font-bold text-white font-syne uppercase mb-4 leading-tight group-hover:text-brass transition-colors">
                   {scenario.title}
                 </h3>
-                <p className="text-concrete text-sm leading-relaxed mb-12">
+                <p className="text-concrete text-sm leading-relaxed mb-20">
                   {scenario.desc}
                 </p>
                 <span className="text-technical text-brass flex items-center gap-2 group-hover:translate-x-2 transition-transform">
@@ -61,7 +61,7 @@ export default function PlanningHubPage() {
       <PlanningChecker />
 
       {/* Lead Magnet Section */}
-      <section className="bg-brass py-64 overflow-hidden relative">
+      <section className="bg-brass py-96 overflow-hidden relative">
         <div className="absolute top-0 right-0 w-1/3 h-full bg-obsidian/10 -skew-x-12 transform translate-x-20" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto flex flex-col lg:flex-row items-center gap-12">
@@ -70,7 +70,7 @@ export default function PlanningHubPage() {
                <h2 className="text-4xl font-bold font-syne uppercase mb-8 leading-tight">
                  Permitted Development<br />Compliance Checklist.
                </h2>
-               <p className="text-lg font-dm-sans opacity-90 mb-12">
+               <p className="text-lg font-dm-sans opacity-90 mb-20">
                  A one-page PDF to verify your build against UK law. Essential 
                  for your building records and future property sales.
                </p>

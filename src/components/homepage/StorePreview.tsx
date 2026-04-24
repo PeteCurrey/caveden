@@ -54,9 +54,9 @@ export function StorePreview() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="bg-obsidian py-64 border-t border-slate-900">
+    <section ref={containerRef} className="bg-obsidian py-96 border-t border-slate-900">
       <div className="container mx-auto px-6">
-        <div className="flex justify-between items-end mb-32">
+        <div className="flex justify-between items-end mb-48">
           <div>
             <span className="text-technical text-brass mb-4 block">THE CAVEDEN STORE</span>
             <h2 className="text-[clamp(28px,3.5vw,46px)] font-bold text-white font-syne uppercase">Curated Kit for Serious Builds.</h2>

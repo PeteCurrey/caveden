@@ -7,11 +7,11 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const BUILD_TYPES = [
-  { name: "Garden Office", desc: "The professional workspace", tag: "FROM 12m²", img: "https://images.unsplash.com/photo-1600607687644-c7171b42498f?q=80&w=2070&auto=format&fit=crop" },
+  { name: "Garden Office", desc: "The professional workspace", tag: "FROM 12m²", img: "/images/build-office.png" },
   { name: "Man Cave", desc: "Your rules. Your space.", tag: "CUSTOM SIZE", img: "https://images.unsplash.com/photo-1595428774751-2856f4d1e27a?q=80&w=2070&auto=format&fit=crop" },
   { name: "Bar Room", desc: "Entertain properly", tag: "FROM 15m²", img: "https://images.unsplash.com/photo-1574096079513-d8259312b785?q=80&w=2070&auto=format&fit=crop" },
-  { name: "Home Gym", desc: "Train without the commute", tag: "FROM 10m²", img: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop" },
-  { name: "Music Studio", desc: "Soundproofed and serious", tag: "ACOUSTIC SPEC", img: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2070&auto=format&fit=crop" },
+  { name: "Home Gym", desc: "Train without the commute", tag: "FROM 10m²", img: "/images/build-gym.png" },
+  { name: "Music Studio", desc: "Soundproofed and serious", tag: "ACOUSTIC SPEC", img: "/images/build-studio.png" },
   { name: "Cinema Room", desc: "Immersive, year-round", tag: "DARK ROOM", img: "https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=2070&auto=format&fit=crop" },
   { name: "Workshop", desc: "Built for making things", tag: "HEAVY DUTY", img: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop" },
   { name: "Games Room", desc: "Go big or go inside", tag: "LARGE SPAN", img: "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2070&auto=format&fit=crop" },
@@ -39,9 +39,9 @@ export function BuildTypeNavigator() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="bg-obsidian py-64 border-t border-slate-900">
+    <section ref={containerRef} className="bg-obsidian py-96 border-t border-slate-900">
       <div className="container mx-auto px-6">
-        <div className="flex justify-between items-end mb-32">
+        <div className="flex justify-between items-end mb-48">
           <div>
             <span className="text-technical text-brass mb-4 block">BUILD TYPES</span>
             <h2 className="text-[clamp(28px,3.5vw,46px)] font-bold text-white font-syne uppercase">Choose Your Build.</h2>

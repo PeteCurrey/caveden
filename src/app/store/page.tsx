@@ -39,10 +39,10 @@ export default function StorePage() {
       
       <StorePreview /> {/* Reusing the featured products grid as a 'Top Sellers' section */}
 
-      <section className="bg-obsidian py-64 border-t border-slate-900">
+      <section className="bg-obsidian py-96 border-t border-slate-900">
         <div className="container mx-auto px-6 text-center">
           <span className="text-technical text-brass mb-8 block">BUILDER SUPPORT</span>
-          <h2 className="text-4xl font-bold text-white font-syne uppercase mb-20">Expert Advice on Every Product.</h2>
+          <h2 className="text-4xl font-bold text-white font-syne uppercase mb-32">Expert Advice on Every Product.</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
             <div>
               <h4 className="text-technical text-white mb-4">ENGINEER TESTED</h4>

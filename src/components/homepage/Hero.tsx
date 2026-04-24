@@ -51,23 +51,23 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-20 container mx-auto px-6 min-h-screen flex flex-col justify-center pt-32 pb-24">
+      <div className="relative z-20 container mx-auto px-6 min-h-screen flex flex-col justify-center pt-48 pb-32">
         <div ref={contentRef} className="max-w-3xl">
-          <span className="text-technical text-brass mb-8 block">
+          <span className="text-technical text-brass mb-20 block tracking-widest">
             THE GARDEN BUILD AUTHORITY
           </span>
           
-          <h1 className="text-[clamp(56px,8vw,104px)] font-extrabold text-white leading-none tracking-[-0.03em] mb-12 font-syne uppercase">
+          <h1 className="text-[clamp(56px,8vw,104px)] font-extrabold text-white leading-none tracking-[-0.03em] mb-16 font-syne uppercase">
             BUILD YOUR<br />SPACE.
           </h1>
           
-          <p className="text-xl md:text-2xl text-concrete mb-20 leading-relaxed font-dm-sans max-w-2xl">
+          <p className="text-xl md:text-2xl text-concrete mb-48 leading-relaxed font-dm-sans max-w-2xl">
             Blueprints, build systems, community and curated gear 
             for garden offices, man caves and outdoor rooms — 
             engineered to a standard you'll be proud of for decades.
           </p>
           
-          <div className="flex flex-wrap gap-4 mb-16">
+          <div className="flex flex-wrap gap-8 mb-32">
             <Link
               href="/planner"
               className="bg-brass text-obsidian px-10 py-5 text-technical font-bold hover:bg-amber transition-all transform hover:-translate-y-1"

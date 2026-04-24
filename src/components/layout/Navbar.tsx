@@ -61,18 +61,18 @@ export function Navbar() {
       className={cn(
         "fixed top-0 left-0 w-full z-50 transition-all duration-500 border-b",
         isScrolled
-          ? "backdrop-blur-md bg-obsidian/85 border-slate-700 py-4"
-          : "bg-transparent border-transparent py-6"
+          ? "backdrop-blur-md bg-obsidian/85 border-slate-700 py-6"
+          : "bg-transparent border-transparent py-10"
       )}
     >
       <nav className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-extrabold tracking-tighter text-white font-syne">
+        <Link href="/" className="text-3xl font-extrabold tracking-tighter text-white font-syne">
           CAVEDEN
         </Link>
 
         {/* Primary Nav */}
-        <ul className="hidden lg:flex items-center gap-8">
+        <ul className="hidden lg:flex items-center gap-12">
           {NAV_ITEMS.map((item) => (
             <li
               key={item.label}

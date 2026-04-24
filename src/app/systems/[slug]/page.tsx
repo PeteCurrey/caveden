@@ -17,14 +17,14 @@ export default async function SystemDetailPage({ params }: { params: { slug: str
 
       <section className="pt-40 pb-20 bg-obsidian border-b border-slate-900">
         <div className="container mx-auto px-6">
-          <Link href="/systems" className="flex items-center gap-2 text-technical text-steel hover:text-brass transition-colors mb-20">
+          <Link href="/systems" className="flex items-center gap-2 text-technical text-steel hover:text-brass transition-colors mb-32">
             <ChevronLeft className="w-4 h-4" /> BACK TO SYSTEMS HUB
           </Link>
 
           <div className="flex flex-col lg:flex-row items-center gap-32">
             <div className="lg:w-3/5">
               <span className="text-technical text-brass mb-4 block">SYSTEM {systemNumber} /</span>
-              <h1 className="text-[clamp(32px,5vw,68px)] font-bold text-white font-syne uppercase mb-12 leading-tight">
+              <h1 className="text-[clamp(32px,5vw,68px)] font-bold text-white font-syne uppercase mb-20 leading-tight">
                 {name}
               </h1>
               <p className="text-xl text-concrete font-dm-sans leading-relaxed max-w-2xl">
@@ -51,7 +51,7 @@ export default async function SystemDetailPage({ params }: { params: { slug: str
       </section>
 
       {/* At a Glance Spec Grid */}
-      <section className="py-48 bg-slate-950">
+      <section className="py-80 bg-slate-950">
         <div className="container mx-auto px-6">
           <h3 className="text-technical text-steel mb-10">AT A GLANCE</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10">
@@ -73,10 +73,10 @@ export default async function SystemDetailPage({ params }: { params: { slug: str
       </section>
 
       {/* Deep Dive Content */}
-      <section className="py-64">
+      <section className="py-96">
         <div className="container mx-auto px-6 flex flex-col lg:flex-row gap-32">
           <div className="lg:w-2/3 prose prose-invert prose-concrete max-w-none">
-            <h2 className="text-3xl font-bold font-syne uppercase mb-12">Engineering Principles</h2>
+            <h2 className="text-3xl font-bold font-syne uppercase mb-20">Engineering Principles</h2>
             <p className="text-xl leading-relaxed text-concrete">
               A garden building foundation must perform three critical tasks: distribute the structural 
               load, prevent moisture ingress (rising damp), and provide a level platform for the build.
@@ -87,7 +87,7 @@ export default async function SystemDetailPage({ params }: { params: { slug: str
               garden builds due to their speed, low environmental impact, and immediate load-bearing capacity.
             </p>
 
-            <h2 className="text-3xl font-bold font-syne uppercase mt-16 mb-12">Comparison of Methods</h2>
+            <h2 className="text-3xl font-bold font-syne uppercase mt-16 mb-20">Comparison of Methods</h2>
             <div className="not-prose space-y-8 mt-8">
               {[
                 { title: "Concrete Slabs", desc: "The traditional choice. Maximum stability but high cost, high carbon footprint, and requires dry weather for curing." },
@@ -101,7 +101,7 @@ export default async function SystemDetailPage({ params }: { params: { slug: str
               ))}
             </div>
 
-            <h2 className="text-3xl font-bold font-syne uppercase mt-16 mb-12">Technical Specifications</h2>
+            <h2 className="text-3xl font-bold font-syne uppercase mt-16 mb-20">Technical Specifications</h2>
             <p className="text-steel leading-relaxed">
               When specifying a concrete base, a minimum thickness of 100mm is required for standard 
               garden offices, increasing to 150mm for larger gyms or workshops. A DPM (Damp Proof Membrane) 

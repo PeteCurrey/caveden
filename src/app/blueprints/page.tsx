@@ -33,7 +33,7 @@ export default function BlueprintsLibraryPage() {
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <span className="text-technical text-brass mb-4 block">ARCHITECTURAL PLANS</span>
-            <h1 className="text-[clamp(38px,5vw,68px)] font-bold text-white font-syne uppercase mb-12 leading-tight">
+            <h1 className="text-[clamp(38px,5vw,68px)] font-bold text-white font-syne uppercase mb-20 leading-tight">
               Blueprint Library.
             </h1>
             <p className="text-xl text-concrete font-dm-sans leading-relaxed">
@@ -73,7 +73,7 @@ export default function BlueprintsLibraryPage() {
         </div>
       </section>
 
-      <section className="py-48">
+      <section className="py-80">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {filteredBlueprints.length > 0 ? (
@@ -91,11 +91,11 @@ export default function BlueprintsLibraryPage() {
       </section>
 
       {/* Blueprint Quality CTA */}
-      <section className="bg-slate-900 py-64 border-y border-slate-800">
+      <section className="bg-slate-900 py-96 border-y border-slate-800">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-32 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-white font-syne uppercase mb-12">What's in the box?</h2>
+              <h2 className="text-3xl font-bold text-white font-syne uppercase mb-20">What's in the box?</h2>
               <p className="text-concrete mb-10 leading-relaxed">
                 When you purchase a CaveDen blueprint, you're getting more than just a drawing. 
                 You're getting a complete engineering package designed for confidence.

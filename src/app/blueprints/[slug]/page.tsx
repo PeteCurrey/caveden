@@ -16,7 +16,7 @@ export default async function BlueprintDetailPage({ params }: { params: { slug: 
 
       <section className="pt-40 pb-20 bg-obsidian">
         <div className="container mx-auto px-6">
-          <Link href="/blueprints" className="flex items-center gap-2 text-technical text-steel hover:text-brass transition-colors mb-20">
+          <Link href="/blueprints" className="flex items-center gap-2 text-technical text-steel hover:text-brass transition-colors mb-32">
             <ChevronLeft className="w-4 h-4" /> BACK TO LIBRARY
           </Link>
 
@@ -24,7 +24,7 @@ export default async function BlueprintDetailPage({ params }: { params: { slug: 
             {/* Main Content */}
             <div className="lg:w-2/3">
               <span className="text-technical text-brass mb-4 block">GARDEN OFFICE // TIMBER FRAME</span>
-              <h1 className="text-[clamp(32px,4vw,56px)] font-bold text-white font-syne uppercase mb-12 leading-tight">
+              <h1 className="text-[clamp(32px,4vw,56px)] font-bold text-white font-syne uppercase mb-20 leading-tight">
                 {title}
               </h1>
               
@@ -41,7 +41,7 @@ export default async function BlueprintDetailPage({ params }: { params: { slug: 
                 </p>
               </div>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-32">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-48">
                 <div>
                   <div className="text-technical text-steel mb-1">BUILDING SIZE</div>
                   <div className="text-lg font-bold text-white font-syne">4000 X 3000MM</div>
@@ -60,7 +60,7 @@ export default async function BlueprintDetailPage({ params }: { params: { slug: 
                 </div>
               </div>
 
-              <h3 className="text-technical text-white mb-12 border-b border-slate-800 pb-4">DOCUMENT PREVIEW</h3>
+              <h3 className="text-technical text-white mb-20 border-b border-slate-800 pb-4">DOCUMENT PREVIEW</h3>
               <BlueprintViewer />
             </div>
 
@@ -94,9 +94,9 @@ export default async function BlueprintDetailPage({ params }: { params: { slug: 
       </section>
 
       {/* Related Blueprints */}
-      <section className="py-64 border-t border-slate-900 bg-obsidian">
+      <section className="py-96 border-t border-slate-900 bg-obsidian">
         <div className="container mx-auto px-6">
-          <h2 className="text-2xl font-bold text-white font-syne uppercase mb-20">Also available in:</h2>
+          <h2 className="text-2xl font-bold text-white font-syne uppercase mb-32">Also available in:</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl">
              {/* Mock related cards */}
              <div className="bg-slate-900 border border-slate-800 p-6 flex gap-10 group cursor-pointer hover:border-brass transition-all">

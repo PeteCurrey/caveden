@@ -49,7 +49,7 @@ export default function ComparisonPage() {
       <section className="pt-48 pb-32">
         <div className="container mx-auto px-6">
           <span className="text-technical text-brass mb-6 block">SYSTEMS ANALYSIS // 03</span>
-          <h1 className="text-[clamp(44px,6vw,84px)] font-bold text-white font-syne uppercase leading-tight mb-12">
+          <h1 className="text-[clamp(44px,6vw,84px)] font-bold text-white font-syne uppercase leading-tight mb-20">
             The Material<br />Authority.
           </h1>
           <p className="text-xl text-concrete font-dm-sans leading-relaxed max-w-2xl">
@@ -61,7 +61,7 @@ export default function ComparisonPage() {
       </section>
 
       {/* Comparison Table */}
-      <section className="py-48 bg-slate-950">
+      <section className="py-80 bg-slate-950">
         <div className="container mx-auto px-6">
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse">
@@ -106,7 +106,7 @@ export default function ComparisonPage() {
       </section>
 
       {/* Recommendation Section */}
-      <section className="py-64">
+      <section className="py-96">
         <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
           <div className="bg-slate-900 p-12 border border-slate-800">
             <ThermometerSnowflake className="w-10 h-10 text-brass mb-8" />

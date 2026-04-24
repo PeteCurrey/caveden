@@ -37,9 +37,9 @@ export function BuildSystemsGrid() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="bg-obsidian py-64 border-t border-slate-900">
+    <section ref={containerRef} className="bg-obsidian py-96 border-t border-slate-900">
       <div className="container mx-auto px-6">
-        <div className="flex justify-between items-end mb-32">
+        <div className="flex justify-between items-end mb-48">
           <div>
             <span className="text-technical text-brass mb-4 block">BUILD SYSTEMS</span>
             <h2 className="text-[clamp(28px,3.5vw,46px)] font-bold text-white font-syne uppercase">Every System. Covered in Depth.</h2>
@@ -56,13 +56,13 @@ export function BuildSystemsGrid() {
               href={`/systems/${system.name.toLowerCase().replace(/ & /g, "-").replace(/ /g, "-")}`}
               className="system-card group bg-slate-900 p-10 border border-slate-800 hover:border-brass transition-all duration-300"
             >
-              <div className="text-4xl font-dm-mono text-steel group-hover:text-brass transition-colors mb-12">
+              <div className="text-4xl font-dm-mono text-steel group-hover:text-brass transition-colors mb-20">
                 {system.id} /
               </div>
               <h3 className="text-xl font-bold text-white font-syne mb-4 uppercase leading-tight group-hover:text-brass transition-colors">
                 {system.name}
               </h3>
-              <p className="text-concrete text-sm leading-relaxed mb-12 font-dm-sans">
+              <p className="text-concrete text-sm leading-relaxed mb-20 font-dm-sans">
                 {system.desc}
               </p>
               <span className="text-technical text-brass flex items-center gap-2 group-hover:translate-x-2 transition-transform duration-300">

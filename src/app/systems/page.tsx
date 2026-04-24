@@ -11,7 +11,7 @@ export default function SystemsHubPage() {
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <span className="text-technical text-brass mb-4 block">TECHNICAL KNOWLEDGE BASE</span>
-            <h1 className="text-[clamp(38px,5vw,68px)] font-bold text-white font-syne uppercase mb-12 leading-tight">
+            <h1 className="text-[clamp(38px,5vw,68px)] font-bold text-white font-syne uppercase mb-20 leading-tight">
               Build Systems.
             </h1>
             <p className="text-xl text-concrete font-dm-sans leading-relaxed">
@@ -26,10 +26,10 @@ export default function SystemsHubPage() {
       <BuildSystemsGrid />
 
       {/* Engineering Philosophy Section */}
-      <section className="bg-slate-900 py-64 border-y border-slate-800">
+      <section className="bg-slate-900 py-96 border-y border-slate-800">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl">
-             <h2 className="text-3xl font-bold text-white font-syne uppercase mb-12 leading-tight">
+             <h2 className="text-3xl font-bold text-white font-syne uppercase mb-20 leading-tight">
                Built to Last.
              </h2>
              <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

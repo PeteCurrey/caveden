@@ -13,9 +13,9 @@ export default function LoginPage() {
     <main className="min-h-screen bg-obsidian flex flex-col pt-20">
       <Navbar />
       
-      <div className="flex-1 flex items-center justify-center py-48 px-6">
+      <div className="flex-1 flex items-center justify-center py-80 px-6">
         <div className="w-full max-w-md">
-          <div className="text-center mb-20">
+          <div className="text-center mb-32">
             <h1 className="text-4xl font-bold text-white font-syne uppercase mb-4">Welcome Back.</h1>
             <p className="text-concrete font-dm-sans">Sign in to access your build plans and journey.</p>
           </div>

@@ -66,11 +66,11 @@ export function PlanningChecker() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="bg-obsidian py-64 border-t border-slate-900 overflow-hidden">
+    <section ref={containerRef} className="bg-obsidian py-96 border-t border-slate-900 overflow-hidden">
       <div className="container mx-auto px-6 flex flex-col lg:flex-row gap-32">
         <div className="lg:w-1/2 planning-content">
           <span className="text-technical text-brass mb-4 block">PLANNING INTELLIGENCE</span>
-          <h2 className="text-[clamp(28px,3.5vw,46px)] font-bold text-white font-syne uppercase mb-12 leading-tight">
+          <h2 className="text-[clamp(28px,3.5vw,46px)] font-bold text-white font-syne uppercase mb-20 leading-tight">
             Know Before You<br />Break Ground.
           </h2>
           <p className="text-xl text-concrete font-dm-sans leading-relaxed mb-10">
@@ -180,7 +180,7 @@ export function PlanningChecker() {
                   <>
                     <CheckCircle className="w-16 h-16 text-brass mb-8" />
                     <h3 className="text-2xl font-bold text-white font-syne mb-2 uppercase">LIKELY PERMITTED</h3>
-                    <p className="text-concrete mb-12 max-w-sm">Your build is likely permitted development based on standard English rules.</p>
+                    <p className="text-concrete mb-20 max-w-sm">Your build is likely permitted development based on standard English rules.</p>
                     <Link href="/planning" className="text-technical text-brass border-b border-brass pb-1">DOWNLOAD COMPLIANCE CHECKLIST →</Link>
                   </>
                 )}
@@ -188,7 +188,7 @@ export function PlanningChecker() {
                   <>
                     <AlertTriangle className="w-16 h-16 text-amber mb-8" />
                     <h3 className="text-2xl font-bold text-white font-syne mb-2 uppercase">REVIEW REQUIRED</h3>
-                    <p className="text-concrete mb-12 max-w-sm">Some aspects need professional checking, particularly regarding conservation status or heights.</p>
+                    <p className="text-concrete mb-20 max-w-sm">Some aspects need professional checking, particularly regarding conservation status or heights.</p>
                     <Link href="/planning" className="text-technical text-brass border-b border-brass pb-1">READ FULL GUIDE →</Link>
                   </>
                 )}
@@ -196,7 +196,7 @@ export function PlanningChecker() {
                   <>
                     <Info className="w-16 h-16 text-steel mb-8" />
                     <h3 className="text-2xl font-bold text-white font-syne mb-2 uppercase">PERMISSION REQUIRED</h3>
-                    <p className="text-concrete mb-12 max-w-sm">A full planning application is likely required for this project type or property.</p>
+                    <p className="text-concrete mb-20 max-w-sm">A full planning application is likely required for this project type or property.</p>
                     <Link href="/planning" className="text-technical text-brass border-b border-brass pb-1">GUIDE TO THE PROCESS →</Link>
                   </>
                 )}

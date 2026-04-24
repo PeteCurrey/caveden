@@ -67,11 +67,11 @@ export default function BuildJourneyPage() {
 
              {/* Right: Active Phase Content */}
              <div className="lg:w-2/3">
-                <div className="bg-slate-900 border border-brass/20 p-12 mb-20">
+                <div className="bg-slate-900 border border-brass/20 p-12 mb-32">
                    <span className="text-technical text-brass mb-4 block">ACTIVE PHASE</span>
-                   <h1 className="text-4xl font-bold text-white font-syne uppercase mb-12">{currentPhase?.name}</h1>
+                   <h1 className="text-4xl font-bold text-white font-syne uppercase mb-20">{currentPhase?.name}</h1>
                    
-                   <div className="space-y-6 mb-20">
+                   <div className="space-y-6 mb-32">
                       {currentPhase?.tasks.map(task => (
                         <div key={task} className="flex items-center gap-4 bg-obsidian/50 p-6 border border-slate-800 group cursor-pointer hover:border-brass transition-colors">
                            <div className="w-6 h-6 border border-slate-700 flex items-center justify-center shrink-0 group-hover:border-brass transition-colors">

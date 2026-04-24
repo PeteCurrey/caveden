@@ -27,7 +27,7 @@ export default function BuildJourneyPage() {
           <div className="flex flex-col lg:flex-row gap-12 items-start">
              {/* Left: Progress Sidebar */}
              <div className="lg:w-1/3 bg-slate-900 border border-slate-800 p-10 sticky top-32">
-                <div className="flex justify-between items-end mb-6">
+                <div className="flex justify-between items-end mb-8">
                   <div>
                     <span className="text-technical text-brass mb-2 block">YOUR BUILD JOURNEY</span>
                     <h2 className="text-2xl font-bold text-white font-syne uppercase">4x3m Garden Office</h2>
@@ -67,11 +67,11 @@ export default function BuildJourneyPage() {
 
              {/* Right: Active Phase Content */}
              <div className="lg:w-2/3">
-                <div className="bg-slate-900 border border-brass/20 p-12 mb-12">
+                <div className="bg-slate-900 border border-brass/20 p-12 mb-20">
                    <span className="text-technical text-brass mb-4 block">ACTIVE PHASE</span>
-                   <h1 className="text-4xl font-bold text-white font-syne uppercase mb-8">{currentPhase?.name}</h1>
+                   <h1 className="text-4xl font-bold text-white font-syne uppercase mb-12">{currentPhase?.name}</h1>
                    
-                   <div className="space-y-6 mb-12">
+                   <div className="space-y-6 mb-20">
                       {currentPhase?.tasks.map(task => (
                         <div key={task} className="flex items-center gap-4 bg-obsidian/50 p-6 border border-slate-800 group cursor-pointer hover:border-brass transition-colors">
                            <div className="w-6 h-6 border border-slate-700 flex items-center justify-center shrink-0 group-hover:border-brass transition-colors">
@@ -92,9 +92,9 @@ export default function BuildJourneyPage() {
                    </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                    <div className="bg-slate-900 border border-slate-800 p-8">
-                      <h4 className="text-technical text-white mb-6">RECOMMENDED GUIDE</h4>
+                      <h4 className="text-technical text-white mb-8">RECOMMENDED GUIDE</h4>
                       <div className="aspect-video bg-obsidian mb-4 relative overflow-hidden group">
                          <div className="absolute inset-0 bg-brass/20 group-hover:bg-brass/40 transition-colors" />
                          <div className="absolute inset-0 flex items-center justify-center">
@@ -105,7 +105,7 @@ export default function BuildJourneyPage() {
                       <p className="text-steel text-sm">Everything you need to know about installing ground screws correctly.</p>
                    </div>
                    <div className="bg-slate-900 border border-slate-800 p-8">
-                      <h4 className="text-technical text-white mb-6">PHASE EQUIPMENT</h4>
+                      <h4 className="text-technical text-white mb-8">PHASE EQUIPMENT</h4>
                       <div className="space-y-4">
                          {[1, 2].map(i => (
                            <div key={i} className="flex gap-4 items-center group cursor-pointer">

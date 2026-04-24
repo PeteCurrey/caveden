@@ -16,15 +16,15 @@ export default async function BlueprintDetailPage({ params }: { params: { slug: 
 
       <section className="pt-40 pb-20 bg-obsidian">
         <div className="container mx-auto px-6">
-          <Link href="/blueprints" className="flex items-center gap-2 text-technical text-steel hover:text-brass transition-colors mb-12">
+          <Link href="/blueprints" className="flex items-center gap-2 text-technical text-steel hover:text-brass transition-colors mb-20">
             <ChevronLeft className="w-4 h-4" /> BACK TO LIBRARY
           </Link>
 
-          <div className="flex flex-col lg:flex-row gap-20">
+          <div className="flex flex-col lg:flex-row gap-32">
             {/* Main Content */}
             <div className="lg:w-2/3">
               <span className="text-technical text-brass mb-4 block">GARDEN OFFICE // TIMBER FRAME</span>
-              <h1 className="text-[clamp(32px,4vw,56px)] font-bold text-white font-syne uppercase mb-8 leading-tight">
+              <h1 className="text-[clamp(32px,4vw,56px)] font-bold text-white font-syne uppercase mb-12 leading-tight">
                 {title}
               </h1>
               
@@ -41,7 +41,7 @@ export default async function BlueprintDetailPage({ params }: { params: { slug: 
                 </p>
               </div>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-32">
                 <div>
                   <div className="text-technical text-steel mb-1">BUILDING SIZE</div>
                   <div className="text-lg font-bold text-white font-syne">4000 X 3000MM</div>
@@ -60,7 +60,7 @@ export default async function BlueprintDetailPage({ params }: { params: { slug: 
                 </div>
               </div>
 
-              <h3 className="text-technical text-white mb-8 border-b border-slate-800 pb-4">DOCUMENT PREVIEW</h3>
+              <h3 className="text-technical text-white mb-12 border-b border-slate-800 pb-4">DOCUMENT PREVIEW</h3>
               <BlueprintViewer />
             </div>
 
@@ -69,7 +69,7 @@ export default async function BlueprintDetailPage({ params }: { params: { slug: 
               <PurchasePanel />
               
               <div className="mt-12 bg-slate-900/50 border border-slate-800 p-8">
-                <h4 className="text-technical text-white mb-6">WHAT'S INCLUDED?</h4>
+                <h4 className="text-technical text-white mb-8">WHAT'S INCLUDED?</h4>
                 <ul className="space-y-4">
                    {[
                      "Dimensioned floor plans (1:50)",
@@ -94,12 +94,12 @@ export default async function BlueprintDetailPage({ params }: { params: { slug: 
       </section>
 
       {/* Related Blueprints */}
-      <section className="py-48 border-t border-slate-900 bg-obsidian">
+      <section className="py-64 border-t border-slate-900 bg-obsidian">
         <div className="container mx-auto px-6">
-          <h2 className="text-2xl font-bold text-white font-syne uppercase mb-12">Also available in:</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
+          <h2 className="text-2xl font-bold text-white font-syne uppercase mb-20">Also available in:</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl">
              {/* Mock related cards */}
-             <div className="bg-slate-900 border border-slate-800 p-6 flex gap-6 group cursor-pointer hover:border-brass transition-all">
+             <div className="bg-slate-900 border border-slate-800 p-6 flex gap-10 group cursor-pointer hover:border-brass transition-all">
                 <div className="w-24 h-24 bg-obsidian shrink-0" />
                 <div>
                   <h4 className="text-white font-bold font-syne uppercase group-hover:text-brass transition-colors">4x3m SIP Build Variant</h4>
@@ -107,7 +107,7 @@ export default async function BlueprintDetailPage({ params }: { params: { slug: 
                   <div className="text-brass font-bold mt-2">£18.00</div>
                 </div>
              </div>
-             <div className="bg-slate-900 border border-slate-800 p-6 flex gap-6 group cursor-pointer hover:border-brass transition-all">
+             <div className="bg-slate-900 border border-slate-800 p-6 flex gap-10 group cursor-pointer hover:border-brass transition-all">
                 <div className="w-24 h-24 bg-obsidian shrink-0" />
                 <div>
                   <h4 className="text-white font-bold font-syne uppercase group-hover:text-brass transition-colors">5x3m Timber Frame Variant</h4>

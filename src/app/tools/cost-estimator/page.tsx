@@ -29,13 +29,13 @@ export default function CostEstimatorPage() {
 
       <section className="pt-40 pb-20 bg-obsidian border-b border-slate-900">
         <div className="container mx-auto px-6">
-          <Link href="/tools" className="flex items-center gap-2 text-technical text-steel hover:text-brass transition-colors mb-12">
+          <Link href="/tools" className="flex items-center gap-2 text-technical text-steel hover:text-brass transition-colors mb-20">
             <ChevronLeft className="w-4 h-4" /> BACK TO TOOLS HUB
           </Link>
 
           <div className="max-w-3xl">
             <span className="text-technical text-brass mb-4 block">ENGINEERING TOOL 01 /</span>
-            <h1 className="text-[clamp(32px,5vw,68px)] font-bold text-white font-syne uppercase mb-8 leading-tight">
+            <h1 className="text-[clamp(32px,5vw,68px)] font-bold text-white font-syne uppercase mb-12 leading-tight">
               Build Cost Estimator.
             </h1>
             <p className="text-xl text-concrete font-dm-sans leading-relaxed">
@@ -46,12 +46,12 @@ export default function CostEstimatorPage() {
         </div>
       </section>
 
-      <section className="py-32">
-        <div className="container mx-auto px-6 flex flex-col lg:flex-row gap-20">
+      <section className="py-48">
+        <div className="container mx-auto px-6 flex flex-col lg:flex-row gap-32">
           {/* Inputs */}
           <div className="lg:w-1/2 space-y-12">
             <div>
-              <label className="text-technical text-brass mb-6 block">BUILD SIZE ({size}m²)</label>
+              <label className="text-technical text-brass mb-8 block">BUILD SIZE ({size}m²)</label>
               <input
                 type="range"
                 min="5"
@@ -67,7 +67,7 @@ export default function CostEstimatorPage() {
             </div>
 
             <div>
-              <label className="text-technical text-brass mb-6 block">SPECIFICATION LEVEL</label>
+              <label className="text-technical text-brass mb-8 block">SPECIFICATION LEVEL</label>
               <div className="grid grid-cols-3 gap-4">
                 {[
                   { id: "budget", label: "BUDGET", desc: "Basic spec" },
@@ -87,7 +87,7 @@ export default function CostEstimatorPage() {
             </div>
 
             <div>
-              <label className="text-technical text-brass mb-6 block">STRUCTURE TYPE</label>
+              <label className="text-technical text-brass mb-8 block">STRUCTURE TYPE</label>
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { id: "timber", label: "TIMBER FRAME" },
@@ -121,7 +121,7 @@ export default function CostEstimatorPage() {
                 </div>
               </div>
 
-              <div className="space-y-6 mb-12">
+              <div className="space-y-6 mb-20">
                 {breakdown.map((item) => (
                   <div key={item.label} className="flex justify-between items-end">
                     <span className="text-concrete font-dm-sans text-sm">{item.label}</span>

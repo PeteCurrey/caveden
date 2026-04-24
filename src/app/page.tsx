@@ -29,10 +29,10 @@ export default function Home() {
       <StorePreview />
       
       {/* Build Planner CTA Section */}
-      <section className="bg-slate-900 py-48 border-t border-slate-800">
+      <section className="bg-slate-900 py-64 border-t border-slate-800">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-[clamp(38px,5vw,68px)] font-bold text-white font-syne uppercase mb-8">Plan Your Build.</h2>
-          <p className="text-xl text-concrete font-dm-sans leading-relaxed mb-12 max-w-2xl mx-auto">
+          <h2 className="text-[clamp(38px,5vw,68px)] font-bold text-white font-syne uppercase mb-12">Plan Your Build.</h2>
+          <p className="text-xl text-concrete font-dm-sans leading-relaxed mb-20 max-w-2xl mx-auto">
             Select your build type. Configure your systems. 
             Generate a materials list and cost estimate — 
             before you spend a penny.

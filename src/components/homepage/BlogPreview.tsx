@@ -44,9 +44,9 @@ export function BlogPreview() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="bg-obsidian py-48 border-t border-slate-900">
+    <section ref={containerRef} className="bg-obsidian py-64 border-t border-slate-900">
       <div className="container mx-auto px-6">
-        <div className="flex justify-between items-end mb-20">
+        <div className="flex justify-between items-end mb-32">
           <div>
             <span className="text-technical text-brass mb-4 block">FROM THE BUILD DESK</span>
             <h2 className="text-[clamp(28px,3.5vw,46px)] font-bold text-white font-syne uppercase">Latest Editorial.</h2>
@@ -63,7 +63,7 @@ export function BlogPreview() {
               <h3 className="text-2xl font-bold text-white font-syne uppercase mb-4 leading-tight group-hover:text-brass transition-colors">
                 {post.title}
               </h3>
-              <p className="text-concrete font-dm-sans leading-relaxed mb-6">
+              <p className="text-concrete font-dm-sans leading-relaxed mb-8">
                 {post.excerpt}
               </p>
               <div className="flex items-center justify-between border-t border-slate-800 pt-6">

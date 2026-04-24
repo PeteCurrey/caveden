@@ -14,14 +14,14 @@ export default async function BuildTypeDetailPage({ params }: { params: { slug: 
 
       <section className="pt-40 pb-20 bg-obsidian border-b border-slate-900">
         <div className="container mx-auto px-6">
-          <Link href="/build-types" className="flex items-center gap-2 text-technical text-steel hover:text-brass transition-colors mb-12">
+          <Link href="/build-types" className="flex items-center gap-2 text-technical text-steel hover:text-brass transition-colors mb-20">
             <ChevronLeft className="w-4 h-4" /> BACK TO ALL TYPES
           </Link>
 
-          <div className="flex flex-col lg:flex-row items-center gap-20">
+          <div className="flex flex-col lg:flex-row items-center gap-32">
             <div className="lg:w-3/5">
               <span className="text-technical text-brass mb-4 block">BUILD TYPE // DEEP-DIVE</span>
-              <h1 className="text-[clamp(32px,5vw,68px)] font-bold text-white font-syne uppercase mb-8 leading-tight">
+              <h1 className="text-[clamp(32px,5vw,68px)] font-bold text-white font-syne uppercase mb-12 leading-tight">
                 {name}.
               </h1>
               <p className="text-xl text-concrete font-dm-sans leading-relaxed max-w-2xl">
@@ -43,10 +43,10 @@ export default async function BuildTypeDetailPage({ params }: { params: { slug: 
       </section>
 
       {/* The Essentials Spec Grid */}
-      <section className="py-32 bg-slate-950">
+      <section className="py-48 bg-slate-950">
         <div className="container mx-auto px-6">
           <h3 className="text-technical text-steel mb-10">THE ESSENTIALS</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
              {[
                { label: "TYPICAL SIZE", val: "12m² - 30m²" },
                { label: "PLANNING", val: "PERMITTED DEV" },
@@ -63,10 +63,10 @@ export default async function BuildTypeDetailPage({ params }: { params: { slug: 
       </section>
 
       {/* Content Section */}
-      <section className="py-48">
-        <div className="container mx-auto px-6 flex flex-col lg:flex-row gap-20">
+      <section className="py-64">
+        <div className="container mx-auto px-6 flex flex-col lg:flex-row gap-32">
           <div className="lg:w-2/3 prose prose-invert prose-concrete max-w-none">
-            <h2 className="text-3xl font-bold font-syne uppercase mb-8">Architectural Overview</h2>
+            <h2 className="text-3xl font-bold font-syne uppercase mb-12">Architectural Overview</h2>
             <p className="text-xl leading-relaxed text-concrete">
               A {name.toLowerCase()} requires a specific set of engineering parameters to ensure 
               it meets its intended purpose. Unlike a standard garden shed, this structure 
@@ -79,7 +79,7 @@ export default async function BuildTypeDetailPage({ params }: { params: { slug: 
               current residential building regulations.
             </p>
 
-            <h3 className="text-2xl font-bold font-syne uppercase mt-16 mb-8">Structural Systems</h3>
+            <h3 className="text-2xl font-bold font-syne uppercase mt-16 mb-12">Structural Systems</h3>
             <p className="text-steel leading-relaxed">
               For most {name.toLowerCase()} projects, we recommend a Timber Frame or SIP 
               (Structural Insulated Panel) approach. Both offer excellent strength-to-weight 
@@ -91,7 +91,7 @@ export default async function BuildTypeDetailPage({ params }: { params: { slug: 
           <div className="lg:w-1/3">
              <div className="space-y-12 sticky top-32">
                 <div className="bg-slate-900 border border-slate-800 p-8">
-                   <h4 className="text-technical text-brass mb-6">REQUIRED SYSTEMS</h4>
+                   <h4 className="text-technical text-brass mb-8">REQUIRED SYSTEMS</h4>
                    <ul className="space-y-4">
                       {["Foundations", "Insulation", "Electrics", "Heating"].map(sys => (
                         <Link key={sys} href="/systems" className="flex items-center justify-between group py-2 border-b border-slate-800">
@@ -103,12 +103,12 @@ export default async function BuildTypeDetailPage({ params }: { params: { slug: 
                 </div>
 
                 <div className="bg-slate-900 border border-brass/30 p-8">
-                   <h4 className="text-technical text-white mb-6">RECOMMENDED PLANS</h4>
-                   <div className="aspect-video bg-obsidian mb-6 border border-slate-800 flex items-center justify-center">
+                   <h4 className="text-technical text-white mb-8">RECOMMENDED PLANS</h4>
+                   <div className="aspect-video bg-obsidian mb-8 border border-slate-800 flex items-center justify-center">
                       <FileText className="w-10 h-10 text-brass opacity-20" />
                    </div>
                    <h5 className="text-white font-bold mb-2">4x3m {name} Plan</h5>
-                   <p className="text-steel text-sm mb-6">Fully dimensioned architectural blueprints.</p>
+                   <p className="text-steel text-sm mb-8">Fully dimensioned architectural blueprints.</p>
                    <Link href="/blueprints" className="block text-center bg-brass text-obsidian py-4 text-technical font-bold hover:bg-amber transition-all">
                       DOWNLOAD PLAN →
                    </Link>

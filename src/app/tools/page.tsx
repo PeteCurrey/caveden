@@ -39,7 +39,7 @@ export default function ToolsHubPage() {
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <span className="text-technical text-brass mb-4 block">ENGINEERING HUB</span>
-            <h1 className="text-[clamp(38px,5vw,68px)] font-bold text-white font-syne uppercase mb-8 leading-tight">
+            <h1 className="text-[clamp(38px,5vw,68px)] font-bold text-white font-syne uppercase mb-12 leading-tight">
               Tools & Calculators.
             </h1>
             <p className="text-xl text-concrete font-dm-sans leading-relaxed">
@@ -51,9 +51,9 @@ export default function ToolsHubPage() {
         </div>
       </section>
 
-      <section className="py-32 bg-slate-950 border-y border-slate-900">
+      <section className="py-48 bg-slate-950 border-y border-slate-900">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {TOOLS.map((tool) => (
               <Link
                 key={tool.title}
@@ -67,7 +67,7 @@ export default function ToolsHubPage() {
                   <h3 className="text-2xl font-bold text-white font-syne uppercase mb-4 leading-tight group-hover:text-brass transition-colors">
                     {tool.title}
                   </h3>
-                  <p className="text-concrete text-lg mb-8 max-w-md">
+                  <p className="text-concrete text-lg mb-12 max-w-md">
                     {tool.desc}
                   </p>
                   <span className="text-technical text-brass flex items-center gap-2 group-hover:translate-x-2 transition-transform">
@@ -81,9 +81,9 @@ export default function ToolsHubPage() {
       </section>
 
       {/* Engineering Standards CTA */}
-      <section className="bg-obsidian py-48 border-b border-slate-900">
+      <section className="bg-obsidian py-64 border-b border-slate-900">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-white font-syne uppercase mb-12">Built to a higher standard.</h2>
+          <h2 className="text-3xl font-bold text-white font-syne uppercase mb-20">Built to a higher standard.</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
             <div>
                <span className="text-technical text-brass mb-4 block">PRECISION</span>

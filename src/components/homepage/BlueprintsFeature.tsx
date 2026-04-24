@@ -36,11 +36,11 @@ export function BlueprintsFeature() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="bg-obsidian py-48 border-t border-slate-900 overflow-hidden">
-      <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-20">
+    <section ref={containerRef} className="bg-obsidian py-64 border-t border-slate-900 overflow-hidden">
+      <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-32">
         <div className="lg:w-[55%] blueprint-content">
           <span className="text-technical text-brass mb-4 block">BLUEPRINTS & DOCUMENTS</span>
-          <h2 className="text-[clamp(28px,3.5vw,46px)] font-bold text-white font-syne uppercase mb-8 leading-tight">
+          <h2 className="text-[clamp(28px,3.5vw,46px)] font-bold text-white font-syne uppercase mb-12 leading-tight">
             Build With Precision.<br />Not Guesswork.
           </h2>
           <p className="text-xl text-concrete font-dm-sans leading-relaxed mb-10 max-w-xl">
@@ -50,7 +50,7 @@ export function BlueprintsFeature() {
             build sequences. Download, print, build with confidence.
           </p>
 
-          <ul className="flex flex-col gap-4 mb-12">
+          <ul className="flex flex-col gap-4 mb-20">
             {[
               "Fully dimensioned floor plans & elevations",
               "Materials schedule with supplier notes",
@@ -66,7 +66,7 @@ export function BlueprintsFeature() {
             ))}
           </ul>
 
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-12">
             <div>
               <div className="text-technical text-steel mb-1">PRICE RANGE</div>
               <div className="text-2xl font-bold text-white font-syne">FROM £12.00</div>

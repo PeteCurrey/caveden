@@ -53,15 +53,15 @@ export function Hero() {
       {/* Content */}
       <div className="relative z-20 container mx-auto px-6 min-h-screen flex flex-col justify-center pt-32 pb-24">
         <div ref={contentRef} className="max-w-3xl">
-          <span className="text-technical text-brass mb-6 block">
+          <span className="text-technical text-brass mb-8 block">
             THE GARDEN BUILD AUTHORITY
           </span>
           
-          <h1 className="text-[clamp(56px,8vw,104px)] font-extrabold text-white leading-none tracking-[-0.03em] mb-8 font-syne uppercase">
+          <h1 className="text-[clamp(56px,8vw,104px)] font-extrabold text-white leading-none tracking-[-0.03em] mb-12 font-syne uppercase">
             BUILD YOUR<br />SPACE.
           </h1>
           
-          <p className="text-xl md:text-2xl text-concrete mb-12 leading-relaxed font-dm-sans max-w-2xl">
+          <p className="text-xl md:text-2xl text-concrete mb-20 leading-relaxed font-dm-sans max-w-2xl">
             Blueprints, build systems, community and curated gear 
             for garden offices, man caves and outdoor rooms — 
             engineered to a standard you'll be proud of for decades.

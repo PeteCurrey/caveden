@@ -31,9 +31,9 @@ export function CommunityShowcase() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="bg-obsidian py-48 border-t border-slate-900">
+    <section ref={containerRef} className="bg-obsidian py-64 border-t border-slate-900">
       <div className="container mx-auto px-6">
-        <div className="flex justify-between items-end mb-20">
+        <div className="flex justify-between items-end mb-32">
           <div>
             <span className="text-technical text-brass mb-4 block">BUILT BY THE COMMUNITY</span>
             <h2 className="text-[clamp(28px,3.5vw,46px)] font-bold text-white font-syne uppercase">Builds That Set the Standard.</h2>
@@ -43,7 +43,7 @@ export function CommunityShowcase() {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {BUILDS.map((build) => (
             <div
               key={build.name}

@@ -33,7 +33,7 @@ export default function BlueprintsLibraryPage() {
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <span className="text-technical text-brass mb-4 block">ARCHITECTURAL PLANS</span>
-            <h1 className="text-[clamp(38px,5vw,68px)] font-bold text-white font-syne uppercase mb-8 leading-tight">
+            <h1 className="text-[clamp(38px,5vw,68px)] font-bold text-white font-syne uppercase mb-12 leading-tight">
               Blueprint Library.
             </h1>
             <p className="text-xl text-concrete font-dm-sans leading-relaxed">
@@ -47,7 +47,7 @@ export default function BlueprintsLibraryPage() {
 
       {/* Filter Bar */}
       <section className="sticky top-[80px] z-30 bg-obsidian/95 backdrop-blur-md border-b border-slate-800 py-6">
-        <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10">
           <div className="flex gap-4 overflow-x-auto w-full md:w-auto pb-2 md:pb-0 scrollbar-hide">
             {["ALL", "GARDEN OFFICE", "MAN CAVE", "BAR ROOM", "HOME GYM", "WORKSHOP"].map(type => (
               <button
@@ -73,9 +73,9 @@ export default function BlueprintsLibraryPage() {
         </div>
       </section>
 
-      <section className="py-32">
+      <section className="py-48">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {filteredBlueprints.length > 0 ? (
               filteredBlueprints.map((bp) => (
                 <BlueprintCard key={bp.id} blueprint={bp} />
@@ -91,16 +91,16 @@ export default function BlueprintsLibraryPage() {
       </section>
 
       {/* Blueprint Quality CTA */}
-      <section className="bg-slate-900 py-48 border-y border-slate-800">
+      <section className="bg-slate-900 py-64 border-y border-slate-800">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-32 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-white font-syne uppercase mb-8">What's in the box?</h2>
+              <h2 className="text-3xl font-bold text-white font-syne uppercase mb-12">What's in the box?</h2>
               <p className="text-concrete mb-10 leading-relaxed">
                 When you purchase a CaveDen blueprint, you're getting more than just a drawing. 
                 You're getting a complete engineering package designed for confidence.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
                 <div>
                   <h4 className="text-technical text-brass mb-2">ARCHITECTURAL VIEWS</h4>
                   <p className="text-steel text-sm">Elevations, floor plans and section drawings at 1:50 or 1:20 scale.</p>

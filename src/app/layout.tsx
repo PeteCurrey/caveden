@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Syne, DM_Sans, DM_Mono } from "next/font/google";
 import "./globals.css";
 import { SmoothScrollProvider } from "@/components/providers/SmoothScroll";
+import { ArchitectChat } from "@/components/ai/ArchitectChat";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -51,6 +52,7 @@ export default function RootLayout({
       <body className="bg-obsidian text-concrete min-h-screen">
         <SmoothScrollProvider>
           {children}
+          <ArchitectChat />
         </SmoothScrollProvider>
       </body>
     </html>

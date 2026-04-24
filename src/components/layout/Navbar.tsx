@@ -18,6 +18,7 @@ const NAV_ITEMS = [
   { label: "BLUEPRINTS", href: "/blueprints", hasMenu: false },
   { label: "STORE", href: "/store", hasMenu: true },
   { label: "TOOLS & PLANNING", href: "/tools", hasMenu: true },
+  { label: "SUPPLIERS", href: "/suppliers", hasMenu: false },
 ];
 
 export function Navbar() {

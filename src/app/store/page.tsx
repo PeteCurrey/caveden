@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function StorePage() {
   return (
-    <main className="min-min-h-screen bg-obsidian">
+    <main className="min-h-screen bg-obsidian">
       <Navbar />
       
       <StoreHero />

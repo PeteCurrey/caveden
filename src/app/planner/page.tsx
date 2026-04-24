@@ -41,7 +41,7 @@ export default function BuildPlannerPage() {
   const totalPrice = (width * depth) * (specLevel === "budget" ? 800 : specLevel === "mid" ? 1200 : 1800) + (selectedSystems.length * 500);
 
   return (
-    <main className="min-min-h-screen bg-obsidian">
+    <main className="min-h-screen bg-obsidian">
       <Navbar />
 
       <section className="pt-40 pb-20 bg-obsidian">

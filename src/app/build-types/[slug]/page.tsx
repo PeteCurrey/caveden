@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { ChevronLeft, Info, FileText, ShoppingBag, Ruler } from "lucide-react";
+import { ChevronLeft, Info, FileText, ShoppingBag, Ruler, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -9,7 +9,7 @@ export default async function BuildTypeDetailPage({ params }: { params: { slug: 
   const name = slug.replace(/-/g, " ").toUpperCase();
 
   return (
-    <main className="min-min-h-screen bg-obsidian">
+    <main className="min-h-screen bg-obsidian">
       <Navbar />
 
       <section className="pt-40 pb-20 bg-obsidian border-b border-slate-900">

@@ -4,7 +4,7 @@ import { BuildTypeNavigator } from "@/components/homepage/BuildTypeNavigator";
 
 export default function BuildTypesHubPage() {
   return (
-    <main className="min-min-h-screen bg-obsidian">
+    <main className="min-h-screen bg-obsidian">
       <Navbar />
 
       <section className="pt-40 pb-20 bg-obsidian">

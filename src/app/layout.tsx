@@ -48,7 +48,7 @@ export default function RootLayout({
       lang="en"
       className={`${syne.variable} ${dmSans.variable} ${dmMono.variable} antialiased selection:bg-brass selection:text-obsidian`}
     >
-      <body className="bg-obsidian text-concrete min-min-h-screen">
+      <body className="bg-obsidian text-concrete min-h-screen">
         <SmoothScrollProvider>
           {children}
         </SmoothScrollProvider>

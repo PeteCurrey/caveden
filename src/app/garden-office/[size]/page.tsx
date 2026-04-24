@@ -14,7 +14,7 @@ export default async function GardenOfficeSizePage({ params }: { params: { size:
   const { size } = await params;
   
   return (
-    <main className="min-min-h-screen bg-obsidian">
+    <main className="min-h-screen bg-obsidian">
       <Navbar />
 
       <section className="pt-40 pb-20 bg-obsidian">

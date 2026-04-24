@@ -19,7 +19,7 @@ export default function BuildJourneyPage() {
   const progress = (PHASES.filter(p => p.status === "completed").length / PHASES.length) * 100;
 
   return (
-    <main className="min-min-h-screen bg-obsidian">
+    <main className="min-h-screen bg-obsidian">
       <Navbar />
 
       <section className="pt-40 pb-20 bg-obsidian">

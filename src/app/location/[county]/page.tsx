@@ -14,7 +14,7 @@ export default async function LocationCountyPage({ params }: { params: { county:
   const countyName = county.charAt(0).toUpperCase() + county.slice(1);
   
   return (
-    <main className="min-min-h-screen bg-obsidian">
+    <main className="min-h-screen bg-obsidian">
       <Navbar />
 
       <section className="pt-40 pb-20 bg-obsidian">

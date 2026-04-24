@@ -11,7 +11,7 @@ export default async function BlueprintDetailPage({ params }: { params: { slug: 
   const title = slug.replace(/-/g, " ").toUpperCase();
 
   return (
-    <main className="min-h-screen bg-obsidian">
+    <main className="h-full bg-obsidian">
       <Navbar />
 
       <section className="pt-40 pb-20 bg-obsidian">

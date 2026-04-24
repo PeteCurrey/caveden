@@ -29,7 +29,7 @@ export function EngineeringAuthority() {
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
           <div className="lg:w-1/2">
             <span className="text-technical text-brass mb-6 block">ENGINEERING AUTHORITY</span>
-            <h2 className="text-[clamp(32px,4.5vw,56px)] font-bold text-white font-syne uppercase leading-none mb-20">
+            <h2 className="text-[clamp(32px,4.5vw,56px)] font-bold text-white font-syne uppercase leading-tight mb-20">
               Beyond the<br />Standard.
             </h2>
             

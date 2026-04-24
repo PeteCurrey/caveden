@@ -44,7 +44,7 @@ const SUPPLIERS = [
 
 export default function SupplierDirectoryPage() {
   return (
-    <main className="min-h-screen bg-obsidian">
+    <main className="h-full bg-obsidian">
       <Navbar />
 
       {/* Hero */}

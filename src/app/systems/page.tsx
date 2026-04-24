@@ -4,7 +4,7 @@ import { BuildSystemsGrid } from "@/components/homepage/BuildSystemsGrid";
 
 export default function SystemsHubPage() {
   return (
-    <main className="min-h-screen bg-obsidian">
+    <main className="h-full bg-obsidian">
       <Navbar />
 
       <section className="pt-32 pb-20 bg-obsidian">

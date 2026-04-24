@@ -26,7 +26,7 @@ export default function BlueprintsLibraryPage() {
   });
 
   return (
-    <main className="min-h-screen bg-obsidian">
+    <main className="h-full bg-obsidian">
       <Navbar />
 
       <section className="pt-40 pb-20 bg-obsidian border-b border-slate-900">

@@ -43,7 +43,7 @@ const COMPARISON_DATA = [
 
 export default function ComparisonPage() {
   return (
-    <main className="min-h-screen bg-obsidian">
+    <main className="h-full bg-obsidian">
       <Navbar />
 
       <section className="pt-48 pb-32">

@@ -11,7 +11,7 @@ export default function RegisterPage() {
   const [password, setPassword] = useState("");
 
   return (
-    <main className="min-h-screen bg-obsidian flex flex-col pt-20">
+    <main className="h-full bg-obsidian flex flex-col pt-20">
       <Navbar />
       
       <div className="flex-1 flex items-center justify-center py-24 px-6">

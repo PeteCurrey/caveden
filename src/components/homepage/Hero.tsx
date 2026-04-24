@@ -36,7 +36,7 @@ export function Hero() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="relative min-h-screen w-full overflow-hidden bg-obsidian">
+    <section ref={containerRef} className="relative h-full w-full overflow-hidden bg-obsidian">
       {/* Background Image with Parallax */}
       <div ref={imageRef} className="absolute inset-0 w-full h-[120%] -top-[10%]">
         <div className="absolute inset-0 bg-gradient-to-tr from-obsidian via-obsidian/60 to-transparent z-10" />
@@ -51,13 +51,13 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-20 container mx-auto px-6 min-h-screen flex flex-col justify-center pt-32 md:pt-48 pb-20 md:pb-32">
+      <div className="relative z-20 container mx-auto px-6 h-full flex flex-col justify-center pt-32 md:pt-48 pb-20 md:pb-32">
         <div ref={contentRef} className="max-w-3xl">
           <span className="text-technical text-brass mb-8 md:mb-12 block tracking-widest">
             THE GARDEN BUILD AUTHORITY
           </span>
           
-          <h1 className="text-[clamp(48px,8vw,104px)] font-extrabold text-white leading-none tracking-[-0.03em] mb-8 md:mb-12 font-syne uppercase">
+          <h1 className="text-[clamp(48px,8vw,104px)] font-extrabold text-white leading-tight tracking-[-0.03em] mb-8 md:mb-12 font-syne uppercase">
             BUILD YOUR<br />SPACE.
           </h1>
           

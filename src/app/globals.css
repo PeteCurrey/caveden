@@ -1,26 +1,146 @@
 @import "tailwindcss";
 
+@theme {
+  --color-obsidian: #0A0A0B;
+  --color-slate-900: #111114;
+  --color-slate-800: #1A1A20;
+  --color-slate-700: #1E1E26;
+  --color-concrete: #C4BDB4;
+  --color-white: #F5F4F2;
+  --color-brass: #C9A84C;
+  --color-amber: #E8B84B;
+  --color-steel: #6B7280;
+  --color-steel-light: #9CA3AF;
+
+  --font-syne: "var(--font-syne)", sans-serif;
+  --font-dm-sans: "var(--font-dm-sans)", sans-serif;
+  --font-dm-mono: "var(--font-dm-mono)", monospace;
+
+  --breakpoint-xs: 480px;
+  --breakpoint-3xl: 1920px;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: var(--color-obsidian);
+  --foreground: var(--color-concrete);
+  --selection-bg: var(--color-brass);
+  --selection-text: var(--color-obsidian);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html,
+body {
+  background-color: var(--color-obsidian);
+  color: var(--color-concrete);
+  font-family: var(--font-dm-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--selection-bg);
+  color: var(--selection-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-syne);
+  color: var(--color-white);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.text-technical {
+  font-family: var(--font-dm-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 11px;
+}
+
+.text-spec {
+  font-family: var(--font-dm-mono);
+  color: var(--color-steel);
+  font-size: 13px;
+}
+
+/* GSAP Reveal Classes */
+.gsap-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* Scroll Smoothing for Lenis */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-obsidian);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-slate-700);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brass);
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+@media (min-width: 768px) {
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@media (min-width: 1280px) {
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+.section-spacing {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+@media (min-width: 1024px) {
+  .section-spacing {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
 }

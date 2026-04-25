@@ -3,8 +3,7 @@
 import { useState, useRef } from "react";
 import Link from "next/link";
 import { ChevronRight, AlertTriangle, CheckCircle, Info } from "lucide-react";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+
 
 type Step = 1 | 2 | 3 | 4;
 
@@ -40,30 +39,6 @@ export function PlanningChecker() {
     setResult("permitted");
   };
 
-  useGSAP(() => {
-    gsap.from(".planning-content > *", {
-      x: -40,
-      
-      duration: 1,
-      stagger: 0.2,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top 70%",
-      },
-    });
-
-    gsap.from(".planning-card", {
-      x: 40,
-      
-      duration: 1.2,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top 70%",
-      },
-    });
-  }, { scope: containerRef });
 
   return (
     <section ref={containerRef} className="bg-obsidian py-[150px] lg:py-[200px] border-t border-slate-900 overflow-hidden">

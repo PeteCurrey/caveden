@@ -2,8 +2,7 @@
 
 import { useRef } from "react";
 import Link from "next/link";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+
 
 const SYSTEMS = [
   { id: "01", name: "FOUNDATIONS & GROUNDWORKS", desc: "Concrete slabs, ground screws, timber frame bases and drainage — every foundation type compared and specified." },
@@ -22,19 +21,7 @@ const SYSTEMS = [
 export function BuildSystemsGrid() {
   const containerRef = useRef<HTMLDivElement>(null);
 
-  useGSAP(() => {
-    gsap.from(".system-card", {
-      y: 40,
-      
-      duration: 0.8,
-      stagger: 0.1,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top 70%",
-      },
-    });
-  }, { scope: containerRef });
+
 
   return (
     <section ref={containerRef} className="bg-obsidian py-[150px] lg:py-[200px] border-t border-slate-900">

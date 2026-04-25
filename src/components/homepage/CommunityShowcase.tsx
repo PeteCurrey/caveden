@@ -3,8 +3,7 @@
 import { useRef } from "react";
 import Image from "next/image";
 import Link from "next/image";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+
 
 const BUILDS = [
   { name: "THE DIRECTORS CUT", type: "GARDEN OFFICE", spec: "6x4m Timber Frame", img: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop" },
@@ -16,19 +15,7 @@ const BUILDS = [
 export function CommunityShowcase() {
   const containerRef = useRef<HTMLDivElement>(null);
 
-  useGSAP(() => {
-    gsap.from(".showcase-card", {
-      y: 40,
-      
-      duration: 0.8,
-      stagger: 0.1,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top 70%",
-      },
-    });
-  }, { scope: containerRef });
+
 
   return (
     <section ref={containerRef} className="bg-obsidian py-[150px] lg:py-[200px] border-t border-slate-900">

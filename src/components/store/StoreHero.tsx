@@ -13,7 +13,7 @@ export function StoreHero() {
   useGSAP(() => {
     gsap.from(contentRef.current?.children || [], {
       y: 30,
-      opacity: 0,
+      
       duration: 1,
       stagger: 0.15,
       ease: "power3.out",

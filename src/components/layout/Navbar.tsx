@@ -49,7 +49,7 @@ export function Navbar() {
   const closeMenu = contextSafe(() => {
     gsap.to(menuRef.current, {
       height: 0,
-      opacity: 0,
+      
       duration: 0.3,
       ease: "power2.inOut",
       onComplete: () => setActiveMenu(null),

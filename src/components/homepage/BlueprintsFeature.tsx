@@ -13,7 +13,7 @@ export function BlueprintsFeature() {
   useGSAP(() => {
     gsap.from(".blueprint-content > *", {
       x: -40,
-      opacity: 0,
+      
       duration: 1,
       stagger: 0.2,
       ease: "power2.out",
@@ -25,7 +25,7 @@ export function BlueprintsFeature() {
 
     gsap.from(visualRef.current, {
       x: 100,
-      opacity: 0,
+      
       duration: 1.2,
       ease: "power2.out",
       scrollTrigger: {
@@ -36,7 +36,7 @@ export function BlueprintsFeature() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="bg-obsidian py-96 border-t border-slate-900 overflow-hidden">
+    <section ref={containerRef} className="bg-obsidian py-[150px] lg:py-[200px] border-t border-slate-900 overflow-hidden">
       <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-32">
         <div className="lg:w-[55%] blueprint-content">
           <span className="text-technical text-brass mb-4 block">BLUEPRINTS & DOCUMENTS</span>

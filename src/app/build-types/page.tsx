@@ -26,7 +26,7 @@ export default function BuildTypesHubPage() {
       <BuildTypeNavigator />
 
       {/* Comparison Section */}
-      <section className="bg-slate-900 py-96 border-y border-slate-800">
+      <section className="bg-slate-900 py-[150px] lg:py-[200px] border-y border-slate-800">
         <div className="container mx-auto px-6">
            <h2 className="text-3xl font-bold text-white font-syne uppercase mb-12 text-center">Compare Build Characteristics.</h2>
            <div className="overflow-x-auto">

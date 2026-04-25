@@ -43,7 +43,7 @@ export function PlanningChecker() {
   useGSAP(() => {
     gsap.from(".planning-content > *", {
       x: -40,
-      opacity: 0,
+      
       duration: 1,
       stagger: 0.2,
       ease: "power2.out",
@@ -55,7 +55,7 @@ export function PlanningChecker() {
 
     gsap.from(".planning-card", {
       x: 40,
-      opacity: 0,
+      
       duration: 1.2,
       ease: "power2.out",
       scrollTrigger: {
@@ -66,7 +66,7 @@ export function PlanningChecker() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="bg-obsidian py-96 border-t border-slate-900 overflow-hidden">
+    <section ref={containerRef} className="bg-obsidian py-[150px] lg:py-[200px] border-t border-slate-900 overflow-hidden">
       <div className="container mx-auto px-6 flex flex-col lg:flex-row gap-32">
         <div className="lg:w-1/2 planning-content">
           <span className="text-technical text-brass mb-4 block">PLANNING INTELLIGENCE</span>

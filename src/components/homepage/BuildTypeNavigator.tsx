@@ -27,7 +27,7 @@ export function BuildTypeNavigator() {
   useGSAP(() => {
     gsap.from(".build-card", {
       y: 40,
-      opacity: 0,
+      
       duration: 0.8,
       stagger: 0.1,
       ease: "power2.out",
@@ -39,7 +39,7 @@ export function BuildTypeNavigator() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="bg-obsidian py-96 border-t border-slate-900">
+    <section ref={containerRef} className="bg-obsidian py-[150px] lg:py-[200px] border-t border-slate-900">
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-end mb-16">
           <div>

@@ -27,7 +27,7 @@ export function Hero() {
     // Content reveal
     gsap.from(contentRef.current?.children || [], {
       y: 40,
-      opacity: 0,
+      
       duration: 1,
       stagger: 0.2,
       ease: "power3.out",
@@ -36,7 +36,7 @@ export function Hero() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="relative h-full w-full overflow-hidden bg-obsidian">
+    <section ref={containerRef} className="relative min-h-screen w-full overflow-hidden bg-obsidian">
       {/* Background Image with Parallax */}
       <div ref={imageRef} className="absolute inset-0 w-full h-[120%] -top-[10%]">
         <div className="absolute inset-0 bg-gradient-to-tr from-obsidian via-obsidian/60 to-transparent z-10" />
@@ -51,7 +51,7 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-20 container mx-auto px-6 h-full flex flex-col justify-center pt-[200px] lg:pt-[300px] pb-20 md:pb-32">
+      <div className="relative z-20 container mx-auto px-6 min-h-screen flex flex-col justify-center pt-32 pb-20">
         <div ref={contentRef} className="max-w-3xl">
           <span className="text-technical text-brass mb-8 md:mb-12 block tracking-widest">
             THE GARDEN BUILD AUTHORITY

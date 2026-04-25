@@ -63,7 +63,7 @@ export default async function BuildTypeDetailPage({ params }: { params: { slug: 
       </section>
 
       {/* Content Section */}
-      <section className="py-96">
+      <section className="py-[150px] lg:py-[200px]">
         <div className="container mx-auto px-6 flex flex-col lg:flex-row gap-32">
           <div className="lg:w-2/3 prose prose-invert prose-concrete max-w-none">
             <h2 className="text-3xl font-bold font-syne uppercase mb-20">Architectural Overview</h2>

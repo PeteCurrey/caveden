@@ -32,7 +32,7 @@ export function BlogPreview() {
   useGSAP(() => {
     gsap.from(".blog-post", {
       y: 40,
-      opacity: 0,
+      
       duration: 0.8,
       stagger: 0.1,
       ease: "power2.out",
@@ -44,7 +44,7 @@ export function BlogPreview() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="bg-obsidian py-96 border-t border-slate-900">
+    <section ref={containerRef} className="bg-obsidian py-[150px] lg:py-[200px] border-t border-slate-900">
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-end mb-16">
           <div>
@@ -56,7 +56,7 @@ export function BlogPreview() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 lg:gap-24">
           {POSTS.map((post) => (
             <Link key={post.title} href="/blog" className="blog-post group">
               <span className="text-technical text-brass mb-4 block">{post.category}</span>

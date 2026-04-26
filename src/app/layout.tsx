@@ -1,22 +1,22 @@
 import type { Metadata } from "next";
-import { Syne, DM_Sans, DM_Mono } from "next/font/google";
+import { Cormorant_Garamond, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { SmoothScrollProvider } from "@/components/providers/SmoothScroll";
 import { ArchitectChat } from "@/components/ai/ArchitectChat";
 
-const syne = Syne({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["700", "800"],
-  variable: "--font-syne",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-syne", // Keeping variable name to avoid changing page.tsx if possible, but actually let's just rename it.
 });
 
-const dmSans = DM_Sans({
+const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500"],
   variable: "--font-dm-sans",
 });
 
-const dmMono = DM_Mono({
+const jetbrains = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-dm-mono",
@@ -47,7 +47,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${syne.variable} ${dmSans.variable} ${dmMono.variable} antialiased selection:bg-brass selection:text-obsidian`}
+      className={`${cormorant.variable} ${inter.variable} ${jetbrains.variable} antialiased selection:bg-[#8B6F47] selection:text-[#FAF7F2]`}
     >
       <body className="bg-obsidian text-concrete h-full">
         <SmoothScrollProvider>

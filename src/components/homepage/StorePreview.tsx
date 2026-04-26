@@ -13,7 +13,7 @@ const PRODUCTS = [
     spec: "1800W | IP55 | Timer",
     price: "£285.00",
     badge: "BUILD ESSENTIAL",
-    img: "https://images.unsplash.com/photo-1542013936693-884638332954?q=80&w=2000&auto=format&fit=crop"
+    img: "/images/hero-main.png"
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const PRODUCTS = [
     spec: "30A | Bluetooth | 12/24V",
     price: "£189.00",
     badge: "OFF-GRID POWER",
-    img: "https://images.unsplash.com/photo-1592833159155-c62df1b35624?q=80&w=2000&auto=format&fit=crop"
+    img: "/images/build-studio.png"
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const PRODUCTS = [
     spec: "80x80cm | Double-glazed | Low-E",
     price: "£340.00",
     badge: "EDITOR'S PICK",
-    img: "https://images.unsplash.com/photo-1513519245088-0e12902e35ca?q=80&w=2000&auto=format&fit=crop"
+    img: "/images/build-office.png"
   },
 ];
 
@@ -53,7 +53,7 @@ export function StorePreview() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-24">
           {PRODUCTS.map((product) => (
             <div key={product.id} className="product-card group cursor-pointer">
               <div className="relative aspect-square bg-slate-900 border border-slate-800 overflow-hidden mb-8">

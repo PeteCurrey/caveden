@@ -36,12 +36,12 @@ export function BuildSystemsGrid() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-20">
           {SYSTEMS.map((system) => (
             <Link
               key={system.id}
               href={`/systems/${system.name.toLowerCase().replace(/ & /g, "-").replace(/ /g, "-")}`}
-              className="system-card group bg-slate-900 p-10 border border-slate-800 hover:border-brass transition-all duration-300"
+              className="system-card group bg-slate-900 p-12 lg:p-16 border border-slate-800 hover:border-brass transition-all duration-300"
             >
               <div className="text-4xl font-dm-mono text-steel group-hover:text-brass transition-colors mb-20">
                 {system.id} /

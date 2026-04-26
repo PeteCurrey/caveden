@@ -55,7 +55,7 @@ export function EditorialIntro() {
         <div className="lg:w-2/5 relative">
           <div className="relative aspect-[3/4] w-full bg-slate-900 border border-slate-700 overflow-hidden gsap-reveal">
             <Image
-              src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=2069&auto=format&fit=crop"
+              src="/images/hero-main.png"
               alt="Build detail"
               fill
               className="object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700"

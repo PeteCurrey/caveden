@@ -6,10 +6,10 @@ import Link from "next/image";
 
 
 const BUILDS = [
-  { name: "THE DIRECTORS CUT", type: "GARDEN OFFICE", spec: "6x4m Timber Frame", img: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop" },
-  { name: "THE LOCKDOWN LEGACY", type: "MAN CAVE", spec: "5x4m SIP Build", img: "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=2069&auto=format&fit=crop" },
-  { name: "THE ALEHOUSE", type: "BAR ROOM", spec: "4x3m with Full Bar", img: "https://images.unsplash.com/photo-1574096079513-d8259312b785?q=80&w=2070&auto=format&fit=crop" },
-  { name: "THE IRON HORSE", type: "WORKSHOP", spec: "8x5m Steel Frame", img: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop" },
+  { name: "THE DIRECTORS CUT", type: "GARDEN OFFICE", spec: "6x4m Timber Frame", img: "/images/hero-main.png" },
+  { name: "THE LOCKDOWN LEGACY", type: "MAN CAVE", spec: "5x4m SIP Build", img: "/images/build-mancave.png" },
+  { name: "THE ALEHOUSE", type: "BAR ROOM", spec: "4x3m with Full Bar", img: "/images/build-office.png" },
+  { name: "THE IRON HORSE", type: "WORKSHOP", spec: "8x5m Steel Frame", img: "/images/hero-main.png" },
 ];
 
 export function CommunityShowcase() {
@@ -30,7 +30,7 @@ export function CommunityShowcase() {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
           {BUILDS.map((build) => (
             <div
               key={build.name}
